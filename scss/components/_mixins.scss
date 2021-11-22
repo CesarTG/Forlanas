@@ -1,0 +1,7 @@
+
+
+@mixin propiedades ($color, $display, $width){
+    color: $color;
+    display: $display;
+    width: $width;    
+}

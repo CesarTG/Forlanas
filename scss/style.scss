@@ -1,0 +1,242 @@
+@import "components/mixins";
+@import "components/extends";
+@import "base/header";
+@import "base/footer";
+@import "components/variables";
+@import "components/listas";
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@300;400&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;   
+}
+
+body{
+    background-color: rgb(233, 230, 230);
+      
+    .mainIndex{ 
+        background-color: rgb(233, 230, 230);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        /*-------grid para remeras y pantalones*/
+        .container-fluid{
+            
+            .row{
+                .divIndex{
+                    transition: all 0.5s ease;
+                    height: 30rem;
+                    .remeraInicio{
+                        .remeraInicioImg{
+                            /*----extenciones en las todas las imagenes---*/
+                            @extend %imagenes;
+                        }
+                    }
+
+                    .aRemerasInicio{
+                        font-family: 'Road Rage', cursive;
+                        font-size: 5rem;
+                        color: black;                                
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: -18rem;
+                        transition: all 0.5s ease; 
+                    }
+
+                    .aRemerasInicio:hover{
+                        transform: scale(1.1);
+                        color: rgb(132, 0, 255);
+                    }
+                }
+
+                .divIndex:hover{
+                    transform: scale(1.01);
+                }
+
+                .divIndex2a{
+                    transition: all 0.5s ease;
+                    height: 30rem;
+                    .pantalonInicio{
+
+                        .pantalonInicioImg{
+                            border: 1px solid black;
+                            /*----extenciones en las todas las imagenes---*/
+                            @extend %imagenes;
+                        }
+                    }
+
+                    .aPantalonInicio{
+                        font-family: 'Road Rage', cursive;
+                        font-size: 5rem;
+                        color: black;                                
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: -18rem;
+                        transition: all 0.5s ease; 
+                    }
+
+                    .aPantalonInicio:hover{
+                        transform: scale(1.1);
+                        color: rgb(255, 80, 0);
+                    }
+                }
+                .divIndex2a:hover{
+                    transform: scale(1.01);
+                }
+            } 
+        }
+
+        /*-------grid para accesorios y vestidos-----------*/
+        .container-fluid{
+            margin-top: 6rem;
+            margin-bottom: 3rem;
+            .row{
+                .divIndex2c{
+                    transition: all 0.5s ease;
+                    height: 40rem;
+
+                    .accesorioInicio{
+                        .accesorioInicioImg{
+                            @extend %imagenes;
+                        }
+                    }
+                    
+                    .aAccesorioInicio{             
+                        font-family: 'Road Rage', cursive;
+                        font-size: 5rem;
+                        color: black;                                
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: -25rem;
+                        transition: all 0.5s ease;                        
+                    }  
+                    
+                    .aAccesorioInicio:hover{
+                        transform: scale(1.1);
+                        color: rgb(255, 255, 255);
+                    }                    
+                } 
+
+                .divIndex2c:hover{
+                    transform: scale(1.01);
+                }
+
+                .divIndex2d{
+                    transition: all 0.5s ease;
+                    height: 40rem;
+                    .vestidoInicio{
+                        .vestidoInicioImg{
+                            @extend %imagenes;
+                        }
+                    }
+
+                    .aVestidoInicio{
+                        font-family: 'Road Rage', cursive;
+                        font-size: 5rem;
+                        /*-elemento lista--*/
+                        color: nth($colores, 5);                                
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        margin-top: -25rem;
+                        transition: all 0.5s ease; 
+                    }
+
+                    .aVestidoInicio:hover{
+                        transform: scale(1.1);
+                        color: rgb(0, 255, 13);
+                    }
+                }
+
+                .divIndex2d:hover{
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+
+    .mainGridGeneral{
+        margin-top: 4rem;
+        margin-bottom: 2rem;
+        background-color: rgb(233, 230, 230);
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+        .container-fluid{         
+            .row{
+                .divAcc{
+                    background-color: rgb(189, 186, 186);
+                    transition: all 0.5s ease;
+                    height: 20rem;
+                    width: 25rem;
+                    margin: 1rem;
+                                       
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+
+                    .accesorioEnlace{
+
+                        .accesorioInicioImg{
+                            height: 92%;
+                            width: 92%;
+                            display: block;
+                        }                        
+                    }
+                    
+                    .Precio{
+                        .aAccesorioInicio{
+                            background-color: rgb(79, 160, 160);
+                            font-family: 'Roboto', sans-serif;
+                            font-size: 1rem;
+                            color: nth($colores, 5);                               
+                            display: block;
+                            width: 92%;
+                            text-align: center;                            
+                            transition: all 0.5s ease; 
+
+                            &:hover{                               
+                                color: gold;
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+    }
+
+    h5{
+        background-color: cadetblue;
+        color: black;
+        
+    }
+    p{
+        background-color: cadetblue;
+        color: black;
+        display: inline-block;
+    }
+
+
+    a{        
+        text-decoration: none;    
+    }
+
+    .h2Rojo{
+        text-transform: uppercase;
+        display: inline-block;
+        margin-top: 20px;
+        /*-- elemento lista--*/
+        padding: nth($pading, 3);
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+         /*-- elemento lista--*/
+        color: nth($colores, 1);
+        border: 1rem inset rgb(143, 139, 139);
+    }
+}

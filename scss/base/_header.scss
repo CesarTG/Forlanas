@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Road+Rage&display=swap');
+
+.top-header{
+    height: 6rem;
+    
+    .navbar{
+        padding: 0rem;
+        height: 6rem;
+        
+        .container-fluid{
+           
+            .navbar-brand{
+                
+                img{
+                    transition: all 0.5s;
+                }
+            
+                img:hover{
+                    transform: scale(1.5)
+                }
+            } 
+
+            .titulo{                                                    
+                              
+                h1{
+                    font-size: 5rem;
+                    color: rgb(255, 255, 255);
+                    font-family: 'Road Rage', cursive;
+                    transition: all 0.5s ease; 
+                    &:hover{
+                    color: rgb(255, 143, 7); 
+                    }                                            
+                }                
+            }                                 
+        }                
+    }          
+} 
+
+    
+

@@ -1,0 +1,56 @@
+@import "../components/variables";
+@import "../components/listas";
+
+footer{
+    height: 230px;    
+    width: 100%; 
+    background-image: url('../src/multimedia/Images/otros/tela.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    h3, h4, h5{
+        color: nth($colores, 5);
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+    }
+
+    .navFooter{
+        background-color: $bg-color;
+        padding: nth($pading, 1);
+        height: 200px; 
+        width: 300px;
+
+        .ulFooter{
+            background-color: $bg-color;
+            list-style: none;
+            text-align: justify; 
+            font-family: 'Roboto', sans-serif;              
+        }
+
+        .ulFooter > li > a{
+            color: nth($colores, 5);
+            font-size: 20px;
+        }
+
+    }
+
+    .sectionNews{
+        background-color: $bg-color;
+        padding: nth($pading, 1); 
+        height: 200px;
+        width: 300px;
+
+    }
+
+    .mediosPago{
+        background-color: $bg-color;
+        padding: nth($pading, 1); 
+        height: 200px; 
+        width: 300px;
+
+    }
+}

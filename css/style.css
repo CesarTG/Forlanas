@@ -1,0 +1,256 @@
+/*----extenciones---*/
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@300;400&display=swap");
+body .mainIndex .container-fluid .row .divIndex2d .vestidoInicio .vestidoInicioImg, body .mainIndex .container-fluid .row .divIndex2c .accesorioInicio .accesorioInicioImg, body .mainIndex .container-fluid .row .divIndex2a .pantalonInicio .pantalonInicioImg, body .mainIndex .container-fluid .row .divIndex .remeraInicio .remeraInicioImg {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.top-header {
+  height: 6rem;
+}
+.top-header .navbar {
+  padding: 0rem;
+  height: 6rem;
+}
+.top-header .navbar .container-fluid .navbar-brand img {
+  transition: all 0.5s;
+}
+.top-header .navbar .container-fluid .navbar-brand img:hover {
+  transform: scale(1.5);
+}
+.top-header .navbar .container-fluid .titulo h1 {
+  font-size: 5rem;
+  color: white;
+  font-family: "Road Rage", cursive;
+  transition: all 0.5s ease;
+}
+.top-header .navbar .container-fluid .titulo h1:hover {
+  color: #ff8f07;
+}
+
+/*----Variables----*/
+/*-------Colores----------*/
+footer {
+  height: 230px;
+  width: 100%;
+  background-image: url("../src/multimedia/Images/otros/tela.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+}
+footer h3, footer h4, footer h5 {
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+footer .navFooter {
+  background-color: gray;
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+}
+footer .navFooter .ulFooter {
+  background-color: gray;
+  list-style: none;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+}
+footer .navFooter .ulFooter > li > a {
+  color: black;
+  font-size: 20px;
+}
+footer .sectionNews {
+  background-color: gray;
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+}
+footer .mediosPago {
+  background-color: gray;
+  padding: 10px;
+  height: 200px;
+  width: 300px;
+}
+
+/*----Variables----*/
+/*-------Colores----------*/
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: #e9e6e6;
+}
+body .mainIndex {
+  background-color: #e9e6e6;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  /*-------grid para remeras y pantalones*/
+  /*-------grid para accesorios y vestidos-----------*/
+}
+body .mainIndex .container-fluid .row .divIndex {
+  transition: all 0.5s ease;
+  height: 30rem;
+}
+body .mainIndex .container-fluid .row .divIndex .remeraInicio .remeraInicioImg {
+  /*----extenciones en las todas las imagenes---*/
+}
+body .mainIndex .container-fluid .row .divIndex .aRemerasInicio {
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -18rem;
+  transition: all 0.5s ease;
+}
+body .mainIndex .container-fluid .row .divIndex .aRemerasInicio:hover {
+  transform: scale(1.1);
+  color: #8400ff;
+}
+body .mainIndex .container-fluid .row .divIndex:hover {
+  transform: scale(1.01);
+}
+body .mainIndex .container-fluid .row .divIndex2a {
+  transition: all 0.5s ease;
+  height: 30rem;
+}
+body .mainIndex .container-fluid .row .divIndex2a .pantalonInicio .pantalonInicioImg {
+  border: 1px solid black;
+  /*----extenciones en las todas las imagenes---*/
+}
+body .mainIndex .container-fluid .row .divIndex2a .aPantalonInicio {
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -18rem;
+  transition: all 0.5s ease;
+}
+body .mainIndex .container-fluid .row .divIndex2a .aPantalonInicio:hover {
+  transform: scale(1.1);
+  color: #ff5000;
+}
+body .mainIndex .container-fluid .row .divIndex2a:hover {
+  transform: scale(1.01);
+}
+body .mainIndex .container-fluid {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+body .mainIndex .container-fluid .row .divIndex2c {
+  transition: all 0.5s ease;
+  height: 40rem;
+}
+body .mainIndex .container-fluid .row .divIndex2c .aAccesorioInicio {
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -25rem;
+  transition: all 0.5s ease;
+}
+body .mainIndex .container-fluid .row .divIndex2c .aAccesorioInicio:hover {
+  transform: scale(1.1);
+  color: white;
+}
+body .mainIndex .container-fluid .row .divIndex2c:hover {
+  transform: scale(1.01);
+}
+body .mainIndex .container-fluid .row .divIndex2d {
+  transition: all 0.5s ease;
+  height: 40rem;
+}
+body .mainIndex .container-fluid .row .divIndex2d .aVestidoInicio {
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+  /*-elemento lista--*/
+  color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: -25rem;
+  transition: all 0.5s ease;
+}
+body .mainIndex .container-fluid .row .divIndex2d .aVestidoInicio:hover {
+  transform: scale(1.1);
+  color: #00ff0d;
+}
+body .mainIndex .container-fluid .row .divIndex2d:hover {
+  transform: scale(1.01);
+}
+body .mainGridGeneral {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  background-color: #e9e6e6;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+body .mainGridGeneral .container-fluid .row .divAcc {
+  background-color: #bdbaba;
+  transition: all 0.5s ease;
+  height: 20rem;
+  width: 25rem;
+  margin: 1rem;
+}
+body .mainGridGeneral .container-fluid .row .divAcc:hover {
+  transform: scale(1.02);
+}
+body .mainGridGeneral .container-fluid .row .divAcc .accesorioEnlace .accesorioInicioImg {
+  height: 92%;
+  width: 92%;
+  display: block;
+}
+body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio {
+  background-color: #4fa0a0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+  display: block;
+  width: 92%;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio:hover {
+  color: gold;
+}
+body h5 {
+  background-color: cadetblue;
+  color: black;
+}
+body p {
+  background-color: cadetblue;
+  color: black;
+  display: inline-block;
+}
+body a {
+  text-decoration: none;
+}
+body .h2Rojo {
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 20px;
+  /*-- elemento lista--*/
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  /*-- elemento lista--*/
+  color: red;
+  border: 1rem inset #8f8b8b;
+}
+
+/*# sourceMappingURL=style.css.map */
