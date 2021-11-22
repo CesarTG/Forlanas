@@ -21,6 +21,10 @@ body{
         align-items: center;
         justify-content: center;
 
+        h2{
+            margin-bottom: 3rem;
+        }
+
         /*-------grid para remeras y pantalones*/
         .container-fluid{
             
@@ -211,17 +215,88 @@ body{
         }
     }
 
+    /*------estilos pagina Contacto-----*/
+    .mainIndex{
+
+        h2{
+            margin-top: 3rem;
+            font-size: 3rem;
+        }
+       
+        .sectionContacto{
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+
+            .secMail{             
+                height: 12rem;
+                width: 18rem;                
+                background-color: nth($colores, 4);
+                svg{
+                    color: brown;
+                }
+
+                .prMail{ 
+                    border: dashed 1px gold;
+                    background-color: nth($colores, 4);                  
+                    font-size: 1.3rem;
+                }             
+            }
+            .secWhat{
+                height: 12rem;
+                width: 18rem; 
+                background-color: nth($colores, 4);
+                svg{                    
+                    color: rgb(13, 197, 13);
+                }
+                .prCelular{
+                    border: dashed 1px gold;
+                    background-color: nth($colores, 4);                  
+                    font-size: 1.3rem;
+                }
+            }
+            .secIcon{                             
+                height: 12rem;
+                width: 18rem; 
+                background-color: nth($colores, 4);
+
+                .prRedes{                   
+                    background-color: nth($colores, 4);                  
+                    font-size: 1.3rem;
+                }
+
+                div{
+                    a{
+                        padding: 1rem;
+                        .contactoFacebook{
+                            color: blue;
+                        }
+                        .contactoInstagram{
+                            color: blueviolet;
+                        }
+                    }
+                }
+            }                    
+        }        
+    }
+    
+    /*--------estilos generales------*/
     h5{
         background-color: cadetblue;
-        color: black;
-        
+        color: black;        
     }
+
+    h3{
+        font-size: 2rem;
+    }
+
     p{
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
         background-color: cadetblue;
         color: black;
         display: inline-block;
     }
-
 
     a{        
         text-decoration: none;    

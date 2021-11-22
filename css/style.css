@@ -87,6 +87,8 @@ footer .mediosPago {
 
 body {
   background-color: #e9e6e6;
+  /*------estilos pagina Contacto-----*/
+  /*--------estilos generales------*/
 }
 body .mainIndex {
   background-color: #e9e6e6;
@@ -95,6 +97,9 @@ body .mainIndex {
   justify-content: center;
   /*-------grid para remeras y pantalones*/
   /*-------grid para accesorios y vestidos-----------*/
+}
+body .mainIndex h2 {
+  margin-bottom: 3rem;
 }
 body .mainIndex .container-fluid .row .divIndex {
   transition: all 0.5s ease;
@@ -225,11 +230,69 @@ body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio {
 body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio:hover {
   color: gold;
 }
+body .mainIndex h2 {
+  margin-top: 3rem;
+  font-size: 3rem;
+}
+body .mainIndex .sectionContacto {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+body .mainIndex .sectionContacto .secMail {
+  height: 12rem;
+  width: 18rem;
+  background-color: gray;
+}
+body .mainIndex .sectionContacto .secMail svg {
+  color: brown;
+}
+body .mainIndex .sectionContacto .secMail .prMail {
+  border: dashed 1px gold;
+  background-color: gray;
+  font-size: 1.3rem;
+}
+body .mainIndex .sectionContacto .secWhat {
+  height: 12rem;
+  width: 18rem;
+  background-color: gray;
+}
+body .mainIndex .sectionContacto .secWhat svg {
+  color: #0dc50d;
+}
+body .mainIndex .sectionContacto .secWhat .prCelular {
+  border: dashed 1px gold;
+  background-color: gray;
+  font-size: 1.3rem;
+}
+body .mainIndex .sectionContacto .secIcon {
+  height: 12rem;
+  width: 18rem;
+  background-color: gray;
+}
+body .mainIndex .sectionContacto .secIcon .prRedes {
+  background-color: gray;
+  font-size: 1.3rem;
+}
+body .mainIndex .sectionContacto .secIcon div a {
+  padding: 1rem;
+}
+body .mainIndex .sectionContacto .secIcon div a .contactoFacebook {
+  color: blue;
+}
+body .mainIndex .sectionContacto .secIcon div a .contactoInstagram {
+  color: blueviolet;
+}
 body h5 {
   background-color: cadetblue;
   color: black;
 }
+body h3 {
+  font-size: 2rem;
+}
 body p {
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
   background-color: cadetblue;
   color: black;
   display: inline-block;
