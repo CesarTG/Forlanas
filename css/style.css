@@ -100,9 +100,6 @@ body .mainIndex .container-fluid .row .divIndex {
   transition: all 0.5s ease;
   height: 30rem;
 }
-body .mainIndex .container-fluid .row .divIndex .remeraInicio .remeraInicioImg {
-  /*----extenciones en las todas las imagenes---*/
-}
 body .mainIndex .container-fluid .row .divIndex .aRemerasInicio {
   font-family: "Road Rage", cursive;
   font-size: 5rem;

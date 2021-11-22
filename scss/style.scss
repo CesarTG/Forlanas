@@ -29,8 +29,8 @@ body{
                     transition: all 0.5s ease;
                     height: 30rem;
                     .remeraInicio{
-                        .remeraInicioImg{
-                            /*----extenciones en las todas las imagenes---*/
+                        
+                        .remeraInicioImg{                           
                             @extend %imagenes;
                         }
                     }
