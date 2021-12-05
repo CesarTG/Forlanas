@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@300;400&display=swap");
 body .mainIndex .container-fluid .row .divIndex2d .vestidoInicio .vestidoInicioImg, body .mainIndex .container-fluid .row .divIndex2c .accesorioInicio .accesorioInicioImg, body .mainIndex .container-fluid .row .divIndex2a .pantalonInicio .pantalonInicioImg, body .mainIndex .container-fluid .row .divIndex .remeraInicio .remeraInicioImg {
-  height: 100%;
+  height: 30rem;
   width: 100%;
   display: block;
 }
@@ -44,11 +44,6 @@ footer {
   align-items: center;
   justify-content: space-around;
 }
-footer h3, footer h4, footer h5 {
-  color: black;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-}
 footer .navFooter {
   background-color: gray;
   padding: 10px;
@@ -61,9 +56,12 @@ footer .navFooter .ulFooter {
   text-align: justify;
   font-family: "Roboto", sans-serif;
 }
-footer .navFooter .ulFooter > li > a {
+footer .navFooter .ulFooter li a {
   color: black;
   font-size: 20px;
+}
+footer .navFooter .ulFooter li a:hover {
+  color: burlywood;
 }
 footer .sectionNews {
   background-color: gray;
@@ -71,11 +69,25 @@ footer .sectionNews {
   height: 200px;
   width: 300px;
 }
+footer .sectionNews #newsletter {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+}
+footer .sectionNews .h4Footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: black;
+}
 footer .mediosPago {
   background-color: gray;
   padding: 10px;
   height: 200px;
   width: 300px;
+}
+footer .mediosPago .h5Footer {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: black;
 }
 
 /*----Variables----*/
@@ -87,26 +99,106 @@ footer .mediosPago {
 }
 
 body {
-  background-color: #e9e6e6;
-  /*----grid de prendas---*/
+  background-color: white;
+  /*----grid de prendas Accesorios---*/
   /*------estilos pagina Contacto-----*/
   /*--------estilos generales------*/
-  /**---------------grid pantalones-------------*/
+  /**---------------grid pantalones(GENERAL)?-------------*/
 }
 body .mainIndex {
-  background-color: #e9e6e6;
+  background-color: white;
   text-align: center;
   align-items: center;
   justify-content: center;
-  /*-------grid para remeras y pantalones*/
-  /*-------grid para accesorios y vestidos-----------*/
+  /*-------grid para remeras y pantalones (index)*/
+  /*-------grid para accesorios y vestidos (index)-----------*/
 }
-body .mainIndex h2 {
-  margin-bottom: 3rem;
+body .mainIndex .gridIndex1 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 30px;
+}
+body .mainIndex .gridIndex1 .divIndexGn {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20%;
+  padding: 0rem;
+}
+body .mainIndex .gridIndex1 .divIndexGn div {
+  height: 400px;
+  overflow: hidden;
+}
+body .mainIndex .gridIndex1 .divIndexGn div .imgNueva {
+  height: 400px;
+  width: 100%;
+  transition: all 0.2s;
+}
+body .mainIndex .gridIndex1 .divIndexGn div .imgNueva:hover {
+  transform: scale(1.1);
+}
+body .mainIndex .gridIndex1 .divIndexGn div .aEspecial {
+  color: black;
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+}
+body .mainIndex .gridIndex1 .divIndexGn div {
+  color: black;
+  display: block;
+  width: 100%;
+  background-color: #b0dd48;
+}
+body .mainIndex .gridIndex1 .divIndexGn div .aEspecial {
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+}
+body .mainIndex .gridIndex2 {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 50px;
+}
+body .mainIndex .gridIndex2 .divIndexGn {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20%;
+  padding: 0rem;
+}
+body .mainIndex .gridIndex2 .divIndexGn div {
+  height: 400px;
+  overflow: hidden;
+}
+body .mainIndex .gridIndex2 .divIndexGn div .imgNueva {
+  height: 400px;
+  width: 100%;
+  transition: all 0.2s;
+}
+body .mainIndex .gridIndex2 .divIndexGn div .imgNueva:hover {
+  transform: scale(1.1);
+}
+body .mainIndex .gridIndex2 .divIndexGn div .aEspecial {
+  color: black;
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
+}
+body .mainIndex .gridIndex2 .divIndexGn div {
+  color: black;
+  display: block;
+  width: 100%;
+  background-color: #dad74e;
+}
+body .mainIndex .gridIndex2 .divIndexGn div .aEspecial {
+  font-family: "Road Rage", cursive;
+  font-size: 5rem;
 }
 body .mainIndex .container-fluid .row .divIndex {
   transition: all 0.5s ease;
   height: 30rem;
+  overflow: hidden;
 }
 body .mainIndex .container-fluid .row .divIndex .aRemerasInicio {
   font-family: "Road Rage", cursive;
@@ -233,47 +325,50 @@ body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio {
 body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio:hover {
   color: gold;
 }
-body .mainIndex h2 {
-  margin-top: 3rem;
-  font-size: 3rem;
-}
 body .mainIndex .sectionContacto {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 10rem;
+  display: flex;
+  background-image: url(../src/multimedia/Images/otros/fondo-contacto.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 300px;
+  justify-content: space-between;
+  margin-bottom: 100px;
 }
 body .mainIndex .sectionContacto .secMail {
+  border-radius: 15%;
   height: 12rem;
   width: 18rem;
-  background-color: gray;
+  /*background-color: nth($colores, 4);*/
+  background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secMail svg {
   color: brown;
 }
-body .mainIndex .sectionContacto .secMail .prMail {
-  border: dashed 1px gold;
-  background-color: gray;
+body .mainIndex .sectionContacto .prMail {
+  font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
 body .mainIndex .sectionContacto .secWhat {
+  border-radius: 15%;
   height: 12rem;
   width: 18rem;
-  background-color: gray;
+  background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secWhat svg {
-  color: #0dc50d;
+  color: #0a860a;
 }
 body .mainIndex .sectionContacto .secWhat .prCelular {
-  border: dashed 1px gold;
-  background-color: gray;
   font-size: 1.3rem;
 }
 body .mainIndex .sectionContacto .secIcon {
+  border-radius: 15%;
   height: 12rem;
   width: 18rem;
-  background-color: gray;
+  background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secIcon .prRedes {
-  background-color: gray;
   font-size: 1.3rem;
 }
 body .mainIndex .sectionContacto .secIcon div a {
@@ -285,22 +380,27 @@ body .mainIndex .sectionContacto .secIcon div a .contactoFacebook {
 body .mainIndex .sectionContacto .secIcon div a .contactoInstagram {
   color: blueviolet;
 }
-body h5 {
-  background-color: cadetblue;
+body h2 {
+  font-family: "Roboto", sans-serif;
   color: black;
+  margin-top: 2rem;
+  font-size: 3rem;
+  margin-bottom: 3rem;
 }
 body h3 {
+  font-family: "Roboto", sans-serif;
+  color: black;
   font-size: 2rem;
 }
 body p {
-  font-size: 1rem;
-  align-items: center;
-  justify-content: center;
-  background-color: cadetblue;
+  font-family: "Roboto", sans-serif;
   color: black;
-  display: inline-block;
+  /*align-items: center;
+  justify-content: center; 
+  display: inline-block;*/
 }
 body a {
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
 body .h2Rojo {
@@ -316,42 +416,63 @@ body .h2Rojo {
   border: 1rem inset #8f8b8b;
 }
 body .gridPantalones {
-  padding: 3rem 1rem;
-  gap: 10px;
+  margin: 2rem;
+  gap: 1rem;
   display: grid;
-  border: 1px solid black;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
 }
 body .gridPantalones .figurePrenda {
-  background-color: blueviolet;
   width: 22rem;
   height: 22rem;
-  border: 1px solid black;
 }
 body .gridPantalones .figurePrenda .nueva {
-  background-color: blue;
   width: 22rem;
   height: 20rem;
   display: block;
   overflow: hidden;
+  margin-bottom: 5px;
 }
 body .gridPantalones .figurePrenda .nueva .aPrenda {
   height: 20rem;
   width: 22rem;
 }
 body .gridPantalones .figurePrenda .nueva .imagenPrenda {
+  object-fit: cover;
   height: 100%;
   width: 100%;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
 }
 body .gridPantalones .figurePrenda .nueva .imagenPrenda:hover {
   transform: scale(1.2);
 }
 body .gridPantalones .figurePrenda .aPrecio {
-  background-color: #a7a8a8;
+  padding: 5px 1rem;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid black;
+  background-color: #dfd499;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
   height: 100%;
   width: 200px;
+  border-radius: 20%;
+  transition: all 0.5s ease;
+}
+body .gridPantalones .figurePrenda .aPrecio:hover {
+  background-color: #e7d04f;
+}
+body .gridPantalones .figurePrenda .bPrecio {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: black;
+  text-transform: uppercase;
+  height: 100%;
+  width: 200px;
+  transition: all 0.5s ease;
+}
+body .gridPantalones .figurePrenda .bPrecio:hover {
+  text-shadow: 2px 2px 2px #aa9831;
 }
 
 /*# sourceMappingURL=style.css.map */

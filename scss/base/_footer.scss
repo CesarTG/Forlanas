@@ -10,13 +10,7 @@ footer{
     display: flex;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
-
-    h3, h4, h5{
-        color: nth($colores, 5);
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-    }
+    justify-content: space-around; 
 
     .navFooter{
         background-color: $bg-color;
@@ -28,14 +22,17 @@ footer{
             background-color: $bg-color;
             list-style: none;
             text-align: justify; 
-            font-family: 'Roboto', sans-serif;              
-        }
-
-        .ulFooter > li > a{
-            color: nth($colores, 5);
-            font-size: 20px;
-        }
-
+            font-family: 'Roboto', sans-serif; 
+            li{
+                a{
+                    color: nth($colores, 5);
+                    font-size: 20px;
+                    &:hover{
+                        color: burlywood;
+                    }
+                }
+            }
+        }      
     }
 
     .sectionNews{
@@ -44,6 +41,16 @@ footer{
         height: 200px;
         width: 300px;
 
+        #newsletter{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+        }
+
+        .h4Footer{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1rem;
+            color: black;
+        }
     }
 
     .mediosPago{
@@ -52,5 +59,10 @@ footer{
         height: 200px; 
         width: 300px;
 
+        .h5Footer{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.5rem;
+            color: black;            
+        }
     }
 }
