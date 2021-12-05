@@ -9,7 +9,8 @@
 
 *{
     padding: 0px;
-    margin: 0px;   
+    margin: 0px; 
+    box-sizing: border-box;  
 }
 
 body{
@@ -316,4 +317,55 @@ body{
         color: nth($colores, 1);
         border: 1rem inset rgb(143, 139, 139);
     }
+
+    /**---------------grid pantalones-------------*///
+
+    .gridPantalones{        
+        padding: 3rem 1rem;
+        gap: 10px;
+        display: grid;
+        border: 1px solid black;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));        
+        
+        .figurePrenda{
+            background-color: blueviolet;
+            width: 22rem;
+            height: 22rem;        
+            border: 1px solid black;
+           
+            .nueva{               
+                background-color: blue;
+                width: 22rem;
+                height: 20rem;                
+                display: block;
+                overflow: hidden;
+               
+                .aPrenda{
+                    height: 20rem;
+                    width: 22rem; 
+                }
+                
+                .imagenPrenda{
+                    height: 100%;
+                    width: 100%;
+                    transition: all 0.4s ease;
+
+                    &:hover{
+                       transform: scale(1.2);
+                    }                    
+                }                               
+            }
+            
+            .aPrecio{  
+                background-color: rgb(167, 168, 168);     
+                height: 100%;
+                width: 200px;
+            }
+        }
+    }
+
+
 }
+
+

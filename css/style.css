@@ -83,6 +83,7 @@ footer .mediosPago {
 * {
   padding: 0px;
   margin: 0px;
+  box-sizing: border-box;
 }
 
 body {
@@ -90,6 +91,7 @@ body {
   /*----grid de prendas---*/
   /*------estilos pagina Contacto-----*/
   /*--------estilos generales------*/
+  /**---------------grid pantalones-------------*/
 }
 body .mainIndex {
   background-color: #e9e6e6;
@@ -312,6 +314,44 @@ body .h2Rojo {
   /*-- elemento lista--*/
   color: red;
   border: 1rem inset #8f8b8b;
+}
+body .gridPantalones {
+  padding: 3rem 1rem;
+  gap: 10px;
+  display: grid;
+  border: 1px solid black;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+body .gridPantalones .figurePrenda {
+  background-color: blueviolet;
+  width: 22rem;
+  height: 22rem;
+  border: 1px solid black;
+}
+body .gridPantalones .figurePrenda .nueva {
+  background-color: blue;
+  width: 22rem;
+  height: 20rem;
+  display: block;
+  overflow: hidden;
+}
+body .gridPantalones .figurePrenda .nueva .aPrenda {
+  height: 20rem;
+  width: 22rem;
+}
+body .gridPantalones .figurePrenda .nueva .imagenPrenda {
+  height: 100%;
+  width: 100%;
+  transition: all 0.4s ease;
+}
+body .gridPantalones .figurePrenda .nueva .imagenPrenda:hover {
+  transform: scale(1.2);
+}
+body .gridPantalones .figurePrenda .aPrecio {
+  background-color: #a7a8a8;
+  height: 100%;
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
