@@ -117,8 +117,8 @@ body .mainIndex .gridIndex1 {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
-  gap: 10px;
-  margin: 30px;
+  gap: 1rem;
+  margin: 3rem;
 }
 body .mainIndex .gridIndex1 .divIndexGn {
   height: 500px;
@@ -158,8 +158,8 @@ body .mainIndex .gridIndex2 {
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin: 50px;
+  gap: 1rem;
+  margin: 3rem;
 }
 body .mainIndex .gridIndex2 .divIndexGn {
   height: 500px;

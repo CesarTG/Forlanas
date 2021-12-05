@@ -27,8 +27,8 @@ body{
             display: grid;
             grid-template-rows: 1fr 1fr;
             grid-template-columns: 1fr;
-            gap: 10px;
-            margin: 30px;
+            gap: 1rem;
+            margin: 3rem;
               
             .divIndexGn{
                 height: 500px;
@@ -80,8 +80,8 @@ body{
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 1fr;
-            gap: 10px;
-            margin: 50px;
+            gap: 1rem;
+            margin: 3rem;
               
             .divIndexGn{
                 height: 500px;
@@ -511,5 +511,3 @@ body{
         }
     }
 }
-
-
