@@ -28,12 +28,17 @@
 /*----Variables----*/
 /*-------Colores----------*/
 footer {
-  height: 230px;
+  height: auto;
   width: 100%;
   background-image: url("../src/multimedia/Images/otros/tela.jpg");
   background-attachment: fixed;
   background-size: cover;
-  display: flex;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  gap: 1rem;
+  margin: 0rem;
+  padding: 1rem;
   text-align: center;
   align-items: center;
   justify-content: space-around;
