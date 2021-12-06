@@ -2,12 +2,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&family=Roboto:wght@300;400&display=swap");
-body .mainIndex .container-fluid .row .divIndex2d .vestidoInicio .vestidoInicioImg, body .mainIndex .container-fluid .row .divIndex2c .accesorioInicio .accesorioInicioImg, body .mainIndex .container-fluid .row .divIndex2a .pantalonInicio .pantalonInicioImg, body .mainIndex .container-fluid .row .divIndex .remeraInicio .remeraInicioImg {
-  height: 30rem;
-  width: 100%;
-  display: block;
-}
-
 .top-header {
   height: 6rem;
 }
@@ -100,18 +94,16 @@ footer .mediosPago .h5Footer {
 
 body {
   background-color: white;
-  /*----grid de prendas Accesorios---*/
-  /*------estilos pagina Contacto-----*/
-  /*--------estilos generales------*/
-  /**---------------grid pantalones(GENERAL)?-------------*/
+  /*------Estilos Grid Index(unicamente)-----*/
+  /*------Estilos pagina Contacto (unicamente)-----*/
+  /*--------Estilos Generales------*/
+  /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*/
 }
 body .mainIndex {
   background-color: white;
   text-align: center;
   align-items: center;
   justify-content: center;
-  /*-------grid para remeras y pantalones (index)*/
-  /*-------grid para accesorios y vestidos (index)-----------*/
 }
 body .mainIndex .gridIndex1 {
   display: grid;
@@ -195,136 +187,6 @@ body .mainIndex .gridIndex2 .divIndexGn div .aEspecial {
   font-family: "Road Rage", cursive;
   font-size: 5rem;
 }
-body .mainIndex .container-fluid .row .divIndex {
-  transition: all 0.5s ease;
-  height: 30rem;
-  overflow: hidden;
-}
-body .mainIndex .container-fluid .row .divIndex .aRemerasInicio {
-  font-family: "Road Rage", cursive;
-  font-size: 5rem;
-  color: black;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: -18rem;
-  transition: all 0.5s ease;
-}
-body .mainIndex .container-fluid .row .divIndex .aRemerasInicio:hover {
-  transform: scale(1.1);
-  color: #8400ff;
-}
-body .mainIndex .container-fluid .row .divIndex:hover {
-  transform: scale(1.01);
-}
-body .mainIndex .container-fluid .row .divIndex2a {
-  transition: all 0.5s ease;
-  height: 30rem;
-}
-body .mainIndex .container-fluid .row .divIndex2a .pantalonInicio .pantalonInicioImg {
-  border: 1px solid black;
-  /*----extenciones en las todas las imagenes---*/
-}
-body .mainIndex .container-fluid .row .divIndex2a .aPantalonInicio {
-  font-family: "Road Rage", cursive;
-  font-size: 5rem;
-  color: black;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: -18rem;
-  transition: all 0.5s ease;
-}
-body .mainIndex .container-fluid .row .divIndex2a .aPantalonInicio:hover {
-  transform: scale(1.1);
-  color: #ff5000;
-}
-body .mainIndex .container-fluid .row .divIndex2a:hover {
-  transform: scale(1.01);
-}
-body .mainIndex .container-fluid {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-}
-body .mainIndex .container-fluid .row .divIndex2c {
-  transition: all 0.5s ease;
-  height: 40rem;
-}
-body .mainIndex .container-fluid .row .divIndex2c .aAccesorioInicio {
-  font-family: "Road Rage", cursive;
-  font-size: 5rem;
-  color: black;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: -25rem;
-  transition: all 0.5s ease;
-}
-body .mainIndex .container-fluid .row .divIndex2c .aAccesorioInicio:hover {
-  transform: scale(1.1);
-  color: white;
-}
-body .mainIndex .container-fluid .row .divIndex2c:hover {
-  transform: scale(1.01);
-}
-body .mainIndex .container-fluid .row .divIndex2d {
-  transition: all 0.5s ease;
-  height: 40rem;
-}
-body .mainIndex .container-fluid .row .divIndex2d .aVestidoInicio {
-  font-family: "Road Rage", cursive;
-  font-size: 5rem;
-  /*-elemento lista--*/
-  color: black;
-  display: block;
-  width: 100%;
-  text-align: center;
-  margin-top: -25rem;
-  transition: all 0.5s ease;
-}
-body .mainIndex .container-fluid .row .divIndex2d .aVestidoInicio:hover {
-  transform: scale(1.1);
-  color: #00ff0d;
-}
-body .mainIndex .container-fluid .row .divIndex2d:hover {
-  transform: scale(1.01);
-}
-body .mainGridGeneral {
-  margin-top: 4rem;
-  margin-bottom: 2rem;
-  background-color: #e9e6e6;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-body .mainGridGeneral .container-fluid .row .divAcc {
-  background-color: #e9e6e6;
-  transition: all 0.1s ease;
-  height: 20rem;
-  width: 25rem;
-  margin: 1rem;
-}
-body .mainGridGeneral .container-fluid .row .divAcc:hover {
-  transform: scale(1.02);
-}
-body .mainGridGeneral .container-fluid .row .divAcc .accesorioEnlace .accesorioInicioImg {
-  height: 92%;
-  width: 92%;
-  display: block;
-}
-body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio {
-  background-color: #3cd4d4;
-  font-family: "Roboto", sans-serif;
-  font-size: 1rem;
-  color: black;
-  display: block;
-  width: 92%;
-  text-align: center;
-  transition: all 0.5s ease;
-}
-body .mainGridGeneral .container-fluid .row .divAcc .Precio .aAccesorioInicio:hover {
-  color: gold;
-}
 body .mainIndex .sectionContacto {
   margin-top: 4rem;
   margin-bottom: 10rem;
@@ -340,7 +202,6 @@ body .mainIndex .sectionContacto .secMail {
   border-radius: 15%;
   height: 12rem;
   width: 18rem;
-  /*background-color: nth($colores, 4);*/
   background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secMail svg {
@@ -414,6 +275,11 @@ body .h2Rojo {
   /*-- elemento lista--*/
   color: red;
   border: 1rem inset #8f8b8b;
+}
+body .secMapa {
+  background-color: #c7c7c7;
+  margin: 0rem;
+  padding: 1rem;
 }
 body .gridPantalones {
   margin: 2rem;

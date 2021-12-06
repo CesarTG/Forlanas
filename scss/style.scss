@@ -16,6 +16,7 @@
 body{
     background-color: rgb(255, 255, 255);
       
+    /*------Estilos Grid Index(unicamente)-----*/
     .mainIndex{ 
         background-color: rgb(255, 255, 255);
         text-align: center;
@@ -127,206 +128,10 @@ body{
                     }
                 }              
             }           
-        }
-
-
-
-
-        /*-------grid para remeras y pantalones (index)*/
-        .container-fluid{
-            
-            .row{
-                .divIndex{
-                    transition: all 0.5s ease;
-                    height: 30rem;
-                    overflow: hidden;
-                    .remeraInicio{
-
-                        
-                        .remeraInicioImg{                           
-                            @extend %imagenes;
-                        }
-                    }
-
-                    .aRemerasInicio{
-                        font-family: 'Road Rage', cursive;
-                        font-size: 5rem;
-                        color: black;                                
-                        display: block;
-                        width: 100%;
-                        text-align: center;
-                        margin-top: -18rem;
-                        transition: all 0.5s ease; 
-                    }
-
-                    .aRemerasInicio:hover{
-                        transform: scale(1.1);
-                        color: rgb(132, 0, 255);
-                    }
-                }
-
-                .divIndex:hover{
-                    transform: scale(1.01);
-                }
-
-                .divIndex2a{
-                    transition: all 0.5s ease;
-                    height: 30rem;
-                    .pantalonInicio{
-
-                        .pantalonInicioImg{
-                            border: 1px solid black;
-                            /*----extenciones en las todas las imagenes---*/
-                            @extend %imagenes;
-                        }
-                    }
-
-                    .aPantalonInicio{
-                        font-family: 'Road Rage', cursive;
-                        font-size: 5rem;
-                        color: black;                                
-                        display: block;
-                        width: 100%;
-                        text-align: center;
-                        margin-top: -18rem;
-                        transition: all 0.5s ease; 
-                    }
-
-                    .aPantalonInicio:hover{
-                        transform: scale(1.1);
-                        color: rgb(255, 80, 0);
-                    }
-                }
-                .divIndex2a:hover{
-                    transform: scale(1.01);
-                }
-            } 
-        }
-
-        /*-------grid para accesorios y vestidos (index)-----------*/
-        .container-fluid{
-            margin-top: 6rem;
-            margin-bottom: 3rem;
-            .row{
-                .divIndex2c{
-                    transition: all 0.5s ease;
-                    height: 40rem;
-
-                    .accesorioInicio{
-                        .accesorioInicioImg{
-                            @extend %imagenes;
-                        }
-                    }
-                    
-                    .aAccesorioInicio{             
-                        font-family: 'Road Rage', cursive;
-                        font-size: 5rem;
-                        color: black;                                
-                        display: block;
-                        width: 100%;
-                        text-align: center;
-                        margin-top: -25rem;
-                        transition: all 0.5s ease;                        
-                    }  
-                    
-                    .aAccesorioInicio:hover{
-                        transform: scale(1.1);
-                        color: rgb(255, 255, 255);
-                    }                    
-                } 
-
-                .divIndex2c:hover{
-                    transform: scale(1.01);
-                }
-
-                .divIndex2d{
-                    transition: all 0.5s ease;
-                    height: 40rem;
-                    .vestidoInicio{
-                        .vestidoInicioImg{
-                            @extend %imagenes;
-                        }
-                    }
-
-                    .aVestidoInicio{
-                        font-family: 'Road Rage', cursive;
-                        font-size: 5rem;
-                        /*-elemento lista--*/
-                        color: nth($colores, 5);                                
-                        display: block;
-                        width: 100%;
-                        text-align: center;
-                        margin-top: -25rem;
-                        transition: all 0.5s ease; 
-                    }
-
-                    .aVestidoInicio:hover{
-                        transform: scale(1.1);
-                        color: rgb(0, 255, 13);
-                    }
-                }
-
-                .divIndex2d:hover{
-                    transform: scale(1.01);
-                }
-            }
-        }
+        }    
     }
 
-    /*----grid de prendas Accesorios---*/
-    
-    .mainGridGeneral{
-        margin-top: 4rem;
-        margin-bottom: 2rem;
-        background-color: rgb(233, 230, 230);
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-
-        .container-fluid{         
-            .row{
-                .divAcc{
-                    background-color: rgb(233, 230, 230);
-                    transition: all 0.1s ease;
-                    height: 20rem;
-                    width: 25rem;
-                    margin: 1rem;
-                                       
-                    &:hover{
-                        transform: scale(1.02);
-                    }
-
-                    .accesorioEnlace{
-
-                        .accesorioInicioImg{
-                            height: 92%;
-                            width: 92%;
-                            display: block;
-                        }                        
-                    }
-                    
-                    .Precio{
-                        .aAccesorioInicio{
-                            background-color: rgb(60, 212, 212);
-                            font-family: 'Roboto', sans-serif;
-                            font-size: 1rem;
-                            color: nth($colores, 5);                               
-                            display: block;
-                            width: 92%;
-                            text-align: center;                            
-                            transition: all 0.5s ease; 
-
-                            &:hover{                               
-                                color: gold;
-                            }
-                        }
-                    }
-                }
-            } 
-        }
-    }
-
-    /*------estilos pagina Contacto-----*/
+    /*------Estilos pagina Contacto (unicamente)-----*/
     .mainIndex{
         
         .sectionContacto{
@@ -343,8 +148,7 @@ body{
             .secMail{  
                 border-radius: 15%;
                 height: 12rem;
-                width: 18rem;                
-                /*background-color: nth($colores, 4);*/
+                width: 18rem;
                 background-color: rgba(124, 160, 238, 0.664);
                 svg{
                     color: brown;
@@ -354,9 +158,8 @@ body{
             .prMail{                 
                 font-family: 'Roboto', sans-serif;
                 font-size: 1.3rem;
-            }             
-              
-
+            }
+            
             .secWhat{
                 border-radius: 15%;
                 height: 12rem;
@@ -398,7 +201,7 @@ body{
         }        
     }            
     
-    /*--------estilos generales------*/
+    /*--------Estilos Generales------*/
     
     h2{
         font-family: 'Roboto', sans-serif;
@@ -440,7 +243,13 @@ body{
         border: 1rem inset rgb(143, 139, 139);
     }
 
-    /**---------------grid pantalones(GENERAL)?-------------*///
+    .secMapa{
+        background-color: rgb(199, 199, 199);
+        margin: 0rem; 
+        padding: 1rem;       
+    }
+
+    /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*///
 
     .gridPantalones{ 
         margin: 2rem;  
