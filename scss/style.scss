@@ -16,7 +16,7 @@
 body{
     background-color: rgb(255, 255, 255);
       
-    /*------Estilos Grid Index(unicamente)-----*/
+    /*------Estilos Grid Index(unicamente)-----*/    
     .mainIndex{ 
         background-color: rgb(255, 255, 255);
         text-align: center;
@@ -30,7 +30,7 @@ body{
             gap: 1rem;
             margin: 3rem;
               
-            .divIndexGn{
+            .divIndexGn1{
                 height: 500px;
                 width: 100%;                
                 overflow: hidden;                
@@ -52,27 +52,52 @@ body{
                     }                    
                 } 
 
-                div{                                       
+                div{                                                    
+                    display: block;
+                    width: 100%;               
+                    background-color: rgb(176, 221, 72);  
+
                     .aEspecial{                        
                         color: black;
                         font-family: 'Road Rage', cursive;
-                        font-size: 5rem;                       
+                        font-size: 5rem;                                                                       
                     }
+                }         
+            } 
+
+            .divIndexGn2{
+                height: 500px;
+                width: 100%;                
+                overflow: hidden;                
+                border-radius: 20%;
+                padding: 0rem;
+
+                div{
+                    height: 400px;                    
+                    overflow: hidden;
+
+                    .imgNueva{
+                        height: 400px;
+                        width: 100%;
+                        transition: all 0.2s;                  
+
+                        &:hover{
+                        transform: scale(1.1);                       
+                        }
+                    }                    
                 }
 
-                div{                   
-                    color: black;                                
+                div{                                                    
                     display: block;
                     width: 100%;               
-                    background-color: rgb(176, 221, 72);
-                } 
-                
-                div{
-                     .aEspecial{
-                       font-family: 'Road Rage', cursive;
-                       font-size: 5rem;                      
+                    background-color: rgb(176, 221, 72);  
+
+                    .aEspecial{                        
+                        color: black;
+                        font-family: 'Road Rage', cursive;
+                        font-size: 5rem;                                                                       
                     }
-                }              
+                }       
             }           
         }
         
@@ -127,7 +152,49 @@ body{
                     }
                 }              
             }           
-        }    
+        } 
+        
+        /*---seccion prueba---*/
+        .mainPrueba{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;           
+
+            .post{
+                height: 500px;
+                width: 700px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    
+                }                
+                .flash{
+                    width: 100%;
+                    height: 0%;
+                    background-color: rgba(100, 255, 10, 0.418);
+                    position: absolute;
+                    top: 0px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+                    border: 0px solid white;
+                    transition: all 0.3s ease-in-out;
+                    border-radius: 45%;
+                    color: black;
+                    font-family: 'Road Rage', cursive;
+                    font-size: 5rem;             
+                    
+                }
+                &:hover .flash{
+                    border: 1px solid white;
+                    height: 100%;
+                    width: 100%;                    
+                }        
+            }
+        }        
     }
 
     /*------Estilos pagina Contacto (unicamente)-----*/
@@ -137,6 +204,7 @@ body{
             margin-top: 4rem;
             margin-bottom: 10rem;
             display: flex;
+            flex-wrap: wrap;
             background-image: url(../src/multimedia/Images/otros/fondo-contacto.jpg);
             background-size: cover;
             background-attachment: fixed;
@@ -220,6 +288,8 @@ body{
         margin-top: 2rem;
         font-size: 3rem;
         margin-bottom: 3rem;
+        border-bottom: 2px solid goldenrod;
+        display: inline-block;
     }   
 
     h3{
