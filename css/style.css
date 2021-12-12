@@ -25,6 +25,11 @@
   color: #ff8f07;
 }
 
+@media screen and (max-width: 480px) {
+  .titulo {
+    font-size: 1rem;
+  }
+}
 /*----Variables----*/
 /*-------Colores----------*/
 footer {
@@ -222,7 +227,7 @@ body .mainIndex .mainPrueba {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  margin: 3rem;
 }
 body .mainIndex .mainPrueba .post {
   height: 500px;
@@ -311,7 +316,7 @@ body .mainIndex .sectionContacto .secIcon div a .contactoInstagram {
   color: blueviolet;
 }
 @media screen and (max-width: 480px) {
-  body h1 {
+  body .titulo h1 {
     font-size: 2.5rem;
   }
   body .h2Rojo {
@@ -360,6 +365,10 @@ body .secMapa {
   background-color: #c7c7c7;
   margin: 0rem;
   padding: 1rem;
+}
+body .mapa {
+  width: 80%;
+  height: 15rem;
 }
 body .gridPantalones {
   margin: 2rem;
