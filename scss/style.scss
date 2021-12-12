@@ -287,7 +287,7 @@ body{
         color: black;
         margin-top: 2rem;
         font-size: 3rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         border-bottom: 2px solid goldenrod;
         display: inline-block;
     }   
@@ -298,9 +298,13 @@ body{
         font-size: 2rem;
     }
    
-    p{
+    p{        
+        background-color: rgb(250, 232, 129);
+        font-size: 1rem;
+        margin: 1rem;
         font-family: 'Roboto', sans-serif;
-        color: black;        
+        color: black; 
+        text-align: justify;       
     }
 
     a{  
@@ -309,15 +313,15 @@ body{
     }
 
     .h2Rojo{
-        background-color: rgb(255, 168, 137);        
+        background-color: rgb(250, 232, 129);        
         display: inline-block;
-        margin-top: 20px;
+        margin-top: 1rem;
         /*-- elemento lista--*/
         padding: nth($pading, 3);
         font-family: 'Roboto', sans-serif;
         text-align: center;
          /*-- elemento lista--*/
-        color: nth($colores, 1);
+        color: nth($colores, 5);
         border: 1rem inset rgb(126, 125, 125);
     }
 

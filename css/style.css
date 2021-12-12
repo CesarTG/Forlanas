@@ -323,7 +323,7 @@ body h2 {
   color: black;
   margin-top: 2rem;
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   border-bottom: 2px solid goldenrod;
   display: inline-block;
 }
@@ -333,23 +333,27 @@ body h3 {
   font-size: 2rem;
 }
 body p {
+  background-color: #fae881;
+  font-size: 1rem;
+  margin: 1rem;
   font-family: "Roboto", sans-serif;
   color: black;
+  text-align: justify;
 }
 body a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
 body .h2Rojo {
-  background-color: #ffa889;
+  background-color: #fae881;
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 1rem;
   /*-- elemento lista--*/
   padding: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   /*-- elemento lista--*/
-  color: red;
+  color: black;
   border: 1rem inset #7e7d7d;
 }
 body .secMapa {
