@@ -42,7 +42,7 @@
                 </a>
 
                 <a class="titulo" href="index.html">
-                    <h1 class="d-inline-block">FORLANAS</h1>
+                    <h1>FORLANAS</h1>
                 </a>
 
             </div>
@@ -113,7 +113,7 @@
 
         <h2 class="h2Rojo">Oferta, hasta 20% menos</h2>
 
-        <!--carusel con imagen  dentro de un grid-->
+        <!-------------Carousel con images que linkean a otras paginas---------------->
 
         <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -126,27 +126,33 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="src/multimedia/Images/otros/fondo-acc.png" class="d-block w-100"
-                        alt="mujer con accesorios femeninos" >
+                    <a href="src/paginas/accesorios.html">
+                        <img src="src/multimedia/Images/otros/fondo-acc.png" class="d-block w-100"
+                            alt="mujer con accesorios femeninos">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h5>Accesorios</h5>
+                        <p class="pCarusel">Hermosos accesorios femeninos para combinar con tus prendas</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="src/multimedia/Images/otros/fondo-pants.png" class="d-block w-100"
-                        alt="pantalanos de distintos colores y tipos de tela" >
+                    <a href="src/paginas/Pantalones.html">
+                        <img src="src/multimedia/Images/otros/fondo-pants.png" class="d-block w-100"
+                            alt="pantalanos de distintos colores y tipos de tela">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h5>Pantalones - Jogers - Jeans</h5>
+                        <p class="pCarusel">Toda la curva de talles en jeans y pantalones para vos</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="src/multimedia/Images/otros/fondo-remes.png" class="d-block w-100"
-                        alt="varias remeras de direfentes colores y diseños" >
+                    <a href="src/paginas/Remeras.html">
+                        <img src="src/multimedia/Images/otros/fondo-remes.png" class="d-block w-100"
+                            alt="varias remeras de direfentes colores y diseños">
+                    </a>
                     <div class="carousel-caption d-none d-md-block">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h5>Remeras</h5>
+                        <p class="pCarusel">Prueba nustras distintas colecciones de remeras con hermosos diseños</p>
                     </div>
                 </div>
             </div>
@@ -161,30 +167,33 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
+        <!----------------Final codigo Carousel------------------>
 
-        <!----------------------------- grids, 2 grids, --------------------------------------->
 
-        <!--grid remeras y pantalones-->
+        <!----------------Seccion con Grids de las categorias principales-------------------------->
+        <!--grid remeras y pantalones, ocupan 1 fila y 1 columna cada imagen-->
         <section class="gridIndex1">
 
-            <div class="divIndexGn1">
-                <div>
-                    <img class="imgNueva" src="src/multimedia/Images/otros/fondoRemeras.jpg" alt="">
-                </div>
+            <div class="mainPrueba">
 
-                <div>
-                    <a class="aEspecial" href="src/paginas/Remeras.html">Remeras</a>
+                <div class="post">
+
+                    <img src="src/multimedia/Images/otros/fondo-remes.png" alt="">
+
+                    <a class="flash" href="../Proyectofinal/src/paginas/Remeras.html">Remeras</a>
+
                 </div>
 
             </div>
 
-            <div class="divIndexGn2">
-                <div>
-                    <img class="imgNueva" src="src/multimedia/Images/otros/fondoPantalon.jpg" alt="">
-                </div>
+            <div class="mainPrueba">
 
-                <div>
-                    <a class="aEspecial" href="src/paginas/Pantalones.html">Pantalones</a>
+                <div class="post">
+
+                    <img src="src/multimedia/Images/otros/fondo-pants.png" alt="">
+
+                    <a class="flash" href="../Proyectofinal/src/paginas/Pantalones.html">Pantalones</a>
+
                 </div>
 
             </div>
@@ -193,38 +202,27 @@
 
         <!--grid accesorios y vestidos-->
         <section class="gridIndex2">
-            <div class="divIndexGn">
-                <div>
-                    <img class="imgNueva" src="src/multimedia/Images/otros/fondoAccesorios.jpg" alt="">
-                </div>
+            <section class="mainPrueba2">
 
-                <div>
-                    <a class="aEspecial" href="src/paginas/accesorios.html">Accesorios</a>
-                </div>
+                <section class="post">
 
-            </div>
+                    <img src="src/multimedia/Images/otros/fondoAccesorios.jpg" alt="">
 
-            <div class="divIndexGn">
-                <div>
-                    <img class="imgNueva" src="src/multimedia/Images/otros/fondoVestidos.jpg" alt="">
-                </div>
+                    <a class="flash" href="../Proyectofinal/src/paginas/accesorios.html">Accesorios</a>
 
-                <div>
-                    <a class="aEspecial" href="src/paginas/Vestidos.html">Vestidos</a>
-                </div>
+                </section>
 
-            </div>
+            </section>
 
-        </section>
+            <section class="mainPrueba2">
 
-        <!--seccion de prueba-->
-        <section class="mainPrueba">
-            
-            <section class="post">
+                <section class="post">
 
-                <img src="src/multimedia/Images/otros/fondoAccesorios.jpg" alt="">
+                    <img src="src/multimedia/Images/otros/fondoVestidos.jpg" alt="">
 
-                <a class="flash" href="../Proyectofinal/src/paginas/Remeras.html">Remeras</a>
+                    <a class="flash" href="../Proyectofinal/src/paginas/Vestidos.html">Vestidos</a>
+
+                </section>
 
             </section>
 

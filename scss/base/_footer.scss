@@ -10,23 +10,22 @@ footer{
     background-size: cover;
     display: grid;        
     grid-template-rows: 1fr ;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
     margin: 0rem;
-    padding: 1rem;
-    padding-left: 3rem;
+    padding: 1rem;    
     text-align: center;
     align-items: center;
     justify-content: space-around; 
 
     .navFooter{
-        background-color: $bg-color;
+        background-color: rgba(128, 128, 128, 0.459);
         padding: nth($pading, 1);
         height: 200px; 
-        width: 300px;
+        width: auto;
 
         .ulFooter{
-            background-color: $bg-color;
+            
             list-style: none;
             text-align: justify; 
             font-family: 'Roboto', sans-serif; 
@@ -43,10 +42,10 @@ footer{
     }
 
     .sectionNews{
-        background-color: $bg-color;
+        background-color: rgba(128, 128, 128, 0.459);
         padding: nth($pading, 1); 
         height: 200px;
-        width: 300px;
+        width: auto;
 
         #newsletter{
             font-family: 'Roboto', sans-serif;
@@ -61,10 +60,10 @@ footer{
     }
 
     .mediosPago{
-        background-color: $bg-color;
+        background-color: rgba(128, 128, 128, 0.459);
         padding: nth($pading, 1); 
         height: 200px; 
-        width: 300px;
+        width: auto;
 
         .h5Footer{
             font-family: 'Roboto', sans-serif;

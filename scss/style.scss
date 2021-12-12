@@ -16,191 +16,107 @@
 body{
     background-color: rgb(255, 255, 255);
       
-    /*------Estilos Grid Index(unicamente)-----*/    
+    /*---------seccion prueba Grid index nuevo--------*/    
     .mainIndex{ 
-        background-color: rgb(255, 255, 255);
+        background-color: whitesmoke;
         text-align: center;
         align-items: center;
         justify-content: center;
 
-        .gridIndex1{
-            display: grid;
-            grid-template-rows: 1fr 1fr;
-            grid-template-columns: 1fr;
-            gap: 1rem;
-            margin: 3rem;
-              
-            .divIndexGn1{
-                height: 500px;
-                width: 100%;                
-                overflow: hidden;                
-                border-radius: 20%;
-                padding: 0rem;
-
-                div{
-                    height: 400px;                    
-                    overflow: hidden;
-
-                    .imgNueva{
-                        height: 400px;
-                        width: 100%;
-                        transition: all 0.2s;                  
-
-                        &:hover{
-                        transform: scale(1.1);                       
-                        }
-                    }                    
-                } 
-
-                div{                                                    
-                    display: block;
-                    width: 100%;               
-                    background-color: rgb(176, 221, 72);  
-
-                    .aEspecial{                        
-                        color: black;
-                        font-family: 'Road Rage', cursive;
-                        font-size: 5rem;                                                                       
-                    }
-                }         
-            } 
-
-            .divIndexGn2{
-                height: 500px;
-                width: 100%;                
-                overflow: hidden;                
-                border-radius: 20%;
-                padding: 0rem;
-
-                div{
-                    height: 400px;                    
-                    overflow: hidden;
-
-                    .imgNueva{
-                        height: 400px;
-                        width: 100%;
-                        transition: all 0.2s;                  
-
-                        &:hover{
-                        transform: scale(1.1);                       
-                        }
-                    }                    
-                }
-
-                div{                                                    
-                    display: block;
-                    width: 100%;               
-                    background-color: rgb(176, 221, 72);  
-
-                    .aEspecial{                        
-                        color: black;
-                        font-family: 'Road Rage', cursive;
-                        font-size: 5rem;                                                                       
-                    }
-                }       
-            }           
-        }
-        
-        .gridIndex2{
+        .gridIndex1{            
             display: grid;
             grid-template-rows: 1fr;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin: 3rem;
-              
-            .divIndexGn{
-                height: 500px;
-                width: 100%;                
-                overflow: hidden;                
-                border-radius: 20%;
-                padding: 0rem;
+            grid-template-columns: 1fr;           
+            margin: 1rem;            
 
-                div{
-                    height: 400px;                    
-                    overflow: hidden;
-
-                    .imgNueva{
-                        height: 400px;
+            .mainPrueba{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;                                                  
+    
+                .post{
+                    height: 500px;
+                    width: 100%;
+                    position: relative;
+                    img{
                         width: 100%;
-                        transition: all 0.2s;                  
-
-                        &:hover{
-                        transform: scale(1.1);                       
-                        }
-                    }                    
-                } 
-
-                div{                                       
-                    .aEspecial{                        
+                        height: 100%;                    
+                    }                
+                    .flash{
+                        width: 100%;
+                        height: 0%;
+                        background-color: rgba(42, 113, 255, 0.308);
+                        position: absolute;
+                        top: 0px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        border: 0px solid white;
+                        transition: all 0.3s ease;                   
                         color: black;
                         font-family: 'Road Rage', cursive;
-                        font-size: 5rem;                       
+                        font-size: 5rem; 
                     }
+                    &:hover .flash{
+                        height: 100%;
+                        width: 100%;                    
+                    }        
                 }
-
-                div{                   
-                    color: black;                                
-                    display: block;
-                    width: 100%;               
-                    background-color: rgb(218, 215, 78);
-                } 
-                
-                div{
-                    .aEspecial{
-                       font-family: 'Road Rage', cursive;
-                       font-size: 5rem;                      
-                    }
-                }              
-            }           
-        } 
+            }          
+        }
         
-        /*---seccion prueba---*/
-        .mainPrueba{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 3rem;                      
+        .gridIndex2{            
+            display: grid;        
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));            
+            margin: 1rem;
 
-            .post{
-                height: 500px;
-                width: 700px;
-                position: relative;
-                img{
+            .mainPrueba2{                
+                align-items: center;
+                justify-content: center;
+                margin: 1rem;                                                    
+    
+                .post{
+                    height: 30rem;
                     width: 100%;
-                    height: 100%;                    
-                }                
-                .flash{
-                    width: 100%;
-                    height: 0%;
-                    background-color: rgba(100, 255, 10, 0.418);
-                    position: absolute;
-                    top: 0px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    overflow: hidden;
-                    border: 0px solid white;
-                    transition: all 0.3s ease-in-out;
-                    border-radius: 45%;
-                    color: black;
-                    font-family: 'Road Rage', cursive;
-                    font-size: 5rem;             
-                    
+                    position: relative;
+                    img{
+                        width: 100%;
+                        height: 100%;                    
+                    }                
+                    .flash{
+                        width: 0%;
+                        height: 100%;
+                        background-color: rgba(54, 250, 113, 0.308);
+                        position: absolute;
+                        top: 0px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        overflow: hidden;
+                        border: 0px solid white;
+                        transition: all 0.2s ease-out;                   
+                        color: black;
+                        font-family: 'Road Rage', cursive;
+                        font-size: 5rem; 
+                    }
+                    &:hover .flash{                   
+                        height: 100%;
+                        width: 100%;                    
+                    }        
                 }
-                &:hover .flash{
-                    border: 1px solid white;
-                    height: 100%;
-                    width: 100%;                    
-                }        
-            }
-        }        
-    }
+            }                      
+        }    
+    }    
 
     /*------Estilos pagina Contacto (unicamente)-----*/
     .mainIndex{
         
         .sectionContacto{
-            margin-top: 4rem;
+            margin-top: 2rem;
             margin-bottom: 10rem;
             display: flex;
             flex-wrap: wrap;
@@ -266,22 +182,7 @@ body{
             }                        
         }        
     } 
-
-    @media screen and (max-width: 480px){
-        
-        .titulo{
-            h1{
-               font-size: 2.5rem; 
-            }
-             
-        }
-
-        .h2Rojo {           
-            font-size: 1.5rem;
-        }           
-              
-    }
-
+   
     /*--------Estilos Generales------*/
     
     h2{
@@ -309,11 +210,23 @@ body{
         text-align: justify;       
     }
 
-    a{  
+    .pCarusel{
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        width: auto;
+        display: inline-block;
+        background-color: greenyellow;
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    a{ 
+        font-size: 1rem;       
         font-family: 'Roboto', sans-serif;      
         text-decoration: none;    
     }
-
+   
     .h2Rojo{
         background-color: rgb(250, 232, 129);        
         display: inline-block;
@@ -330,12 +243,25 @@ body{
     .secMapa{
         background-color: rgb(199, 199, 199);
         margin: 0rem; 
-        padding: 1rem;       
+        padding: 1rem;
+        justify-content: center;             
     }
 
     .mapa{
         width: 80%;
-        height: 15rem;
+        height: 15rem;       
+    }
+    .parrafoDonde{
+        background-color: rgb(255, 255, 255);
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+        font-family: 'Roboto', sans-serif;
+        border-bottom: 1px solid goldenrod;       
+    }
+   
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+       background-color: rgb(0, 0, 0);
     }
 
     /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*///
@@ -344,23 +270,26 @@ body{
         margin: 2rem;  
         gap: 1rem;
         display: grid;        
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));        
+        grid-template-rows: 1fr ;
+        grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr 1fr ));
+        grid-template-columns: 1fr 1fr 1fr;        
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));        
         
         .figurePrenda{ 
-            width: 22rem;
-            height: 22rem;       
+            background-color: greenyellow;
+            width: 15rem;
+            height: auto;       
                        
             .nueva{
-                width: 22rem;
+                width: 100%;
                 height: 20rem;                
                 display: block;
                 overflow: hidden;                
                 margin-bottom: 5px;               
                
                 .aPrenda{
-                    height: 20rem;
-                    width: 22rem; 
+                    height: 100%;
+                    width: 100%; 
                 }
                 
                 .imagenPrenda{  
@@ -407,5 +336,30 @@ body{
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 480px){
+    .h2Rojo {           
+        font-size: 1.5rem;
+    }           
+}
+
+@media screen and (max-width: 480px){ 
+    .h2Titulo{
+        font-size: 1.5rem;
+        background-color: rgb(235, 208, 123);
+    }  
+}
+/*-----ejemplo----*/
+@media (min-width: 400px) {
+    .h1Nombre {
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .h1Nombre {
+        font-size: 1.6rem;
     }
 }

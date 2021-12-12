@@ -3,27 +3,26 @@
 .top-header{
     height: 6rem;
     
-    .navbar{
-        padding: 0rem;
+    .navbar{        
         height: 6rem;
         
         .container-fluid{
            
-            .navbar-brand{
+            .navbar-brand{             
                 
                 img{
                     transition: all 0.5s;
                 }
             
                 img:hover{
-                    transform: scale(1.5)
+                    transform: scale(1.2)
                 }
             } 
 
             .titulo{                                                    
                               
                 h1{
-                    font-size: 5rem;
+                    font-size: 4rem;
                     color: rgb(255, 255, 255);
                     font-family: 'Road Rage', cursive;
                     transition: all 0.5s ease; 
@@ -35,12 +34,3 @@
         }                
     }          
 } 
-
-@media screen and (max-width: 480px){
-    .titulo{
-        font-size: 1rem; 
-    }
-}
-
-    
-
