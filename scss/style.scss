@@ -14,7 +14,7 @@
 }
 
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: whitesmoke;
       
     /*---------seccion prueba Grid index nuevo--------*/    
     .mainIndex{ 
@@ -22,8 +22,11 @@ body{
         text-align: center;
         align-items: center;
         justify-content: center;
-
-        .gridIndex1{            
+        
+        .gridIndex1{ 
+            text-align: center;
+            align-items: center;           
+            justify-content: center;
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr;           
@@ -273,12 +276,15 @@ body{
         grid-template-rows: 1fr ;
         grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr 1fr ));
         grid-template-columns: 1fr 1fr 1fr;        
-        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));        
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));             
         
         .figurePrenda{ 
             background-color: greenyellow;
-            width: 15rem;
-            height: auto;       
+            width: 100%;
+            height: auto;   
+            text-align: center;
+            align-items: center;
+            justify-content: center;    
                        
             .nueva{
                 width: 100%;

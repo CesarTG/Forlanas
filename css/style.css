@@ -96,7 +96,7 @@ footer .mediosPago .h5Footer {
 }
 
 body {
-  background-color: white;
+  background-color: whitesmoke;
   /*---------seccion prueba Grid index nuevo--------*/
   /*------Estilos pagina Contacto (unicamente)-----*/
   /*--------Estilos Generales------*/
@@ -109,6 +109,9 @@ body .mainIndex {
   justify-content: center;
 }
 body .mainIndex .gridIndex1 {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr;
@@ -326,8 +329,11 @@ body .gridPantalones {
 }
 body .gridPantalones .figurePrenda {
   background-color: greenyellow;
-  width: 15rem;
+  width: 100%;
   height: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 body .gridPantalones .figurePrenda .nueva {
   width: 100%;
