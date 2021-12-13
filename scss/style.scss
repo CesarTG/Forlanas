@@ -192,7 +192,7 @@ body{
         font-family: 'Roboto', sans-serif;
         color: black;
         margin-top: 2rem;
-        font-size: 3rem;
+        font-size: 2rem;
         margin-bottom: 2rem;
         border-bottom: 2px solid goldenrod;
         display: inline-block;
@@ -202,6 +202,21 @@ body{
         font-family: 'Roboto', sans-serif;
         color: black;
         font-size: 2rem;
+    }
+
+    .carousel-caption{ 
+        
+        h5{            
+            width: 60%;
+            display: inline-block;           
+            font-family: 'Roboto', sans-serif;
+            color: rgb(250, 71, 0);
+            font-size: 2rem;
+            padding: 1rem;
+            font-weight: 600;
+            background-color: rgba(0, 0, 255, 0.6);
+            box-shadow: black 2px 2px 2px ;
+        }
     }
    
     p{        
@@ -216,12 +231,13 @@ body{
     .pCarusel{
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        width: auto;
-        display: inline-block;
-        background-color: greenyellow;
+        width: 60%;
+        display: inline-block; 
+        background-color: rgba(172, 255, 47, 0.6);
         padding: 1rem;
         font-size: 1rem;
         font-weight: 600;
+        box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 3px 3px;
     }
 
     a{ 
@@ -230,17 +246,17 @@ body{
         text-decoration: none;    
     }
    
-    .h2Rojo{
+    .h2Rojo{      
         background-color: rgb(250, 232, 129);        
         display: inline-block;
         margin-top: 1rem;
         /*-- elemento lista--*/
-        padding: nth($pading, 3);
+        padding: nth($pading, 1);
         font-family: 'Roboto', sans-serif;
         text-align: center;
          /*-- elemento lista--*/
         color: nth($colores, 5);
-        border: 1rem inset rgb(126, 125, 125);
+        border: .5rem inset rgb(126, 125, 125);
     }
 
     .secMapa{
@@ -347,7 +363,7 @@ body{
 
 @media screen and (max-width: 480px){
     .h2Rojo {           
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }           
 }
 

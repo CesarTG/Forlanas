@@ -252,7 +252,7 @@ body h2 {
   font-family: "Roboto", sans-serif;
   color: black;
   margin-top: 2rem;
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid goldenrod;
   display: inline-block;
@@ -261,6 +261,17 @@ body h3 {
   font-family: "Roboto", sans-serif;
   color: black;
   font-size: 2rem;
+}
+body .carousel-caption h5 {
+  width: 60%;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  color: #fa4700;
+  font-size: 2rem;
+  padding: 1rem;
+  font-weight: 600;
+  background-color: rgba(0, 0, 255, 0.6);
+  box-shadow: black 2px 2px 2px;
 }
 body p {
   background-color: #fae881;
@@ -273,12 +284,13 @@ body p {
 body .pCarusel {
   font-family: "Roboto", sans-serif;
   text-align: center;
-  width: auto;
+  width: 60%;
   display: inline-block;
-  background-color: greenyellow;
+  background-color: rgba(172, 255, 47, 0.6);
   padding: 1rem;
   font-size: 1rem;
   font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.8) 2px 2px 3px 3px;
 }
 body a {
   font-size: 1rem;
@@ -290,12 +302,12 @@ body .h2Rojo {
   display: inline-block;
   margin-top: 1rem;
   /*-- elemento lista--*/
-  padding: 20px;
+  padding: 10px;
   font-family: "Roboto", sans-serif;
   text-align: center;
   /*-- elemento lista--*/
   color: black;
-  border: 1rem inset #7e7d7d;
+  border: 0.5rem inset #7e7d7d;
 }
 body .secMapa {
   background-color: #c7c7c7;
@@ -386,7 +398,7 @@ body .gridPantalones .figurePrenda .bPrecio:hover {
 
 @media screen and (max-width: 480px) {
   .h2Rojo {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 @media screen and (max-width: 480px) {
