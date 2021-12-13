@@ -320,7 +320,7 @@ body .carousel-control-prev-icon, body .carousel-control-next-icon {
 }
 body .gridPantalones {
   margin: 2rem;
-  gap: 1rem;
+  gap: 3rem;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr 1fr));
