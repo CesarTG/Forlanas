@@ -124,7 +124,7 @@ body .mainIndex .gridIndex1 .mainPrueba {
   margin: 1rem;
 }
 body .mainIndex .gridIndex1 .mainPrueba .post {
-  height: 500px;
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -165,7 +165,7 @@ body .mainIndex .gridIndex2 .mainPrueba2 {
   margin: 1rem;
 }
 body .mainIndex .gridIndex2 .mainPrueba2 .post {
-  height: 30rem;
+  height: auto;
   width: 100%;
   position: relative;
 }
@@ -194,49 +194,58 @@ body .mainIndex .gridIndex2 .mainPrueba2 .post:hover .flash {
   width: 100%;
 }
 body .mainIndex .sectionContacto {
-  margin-top: 2rem;
-  margin-bottom: 10rem;
-  display: flex;
-  flex-wrap: wrap;
-  background-image: url(../src/multimedia/Images/otros/fondo-contacto.jpg);
-  background-size: cover;
+  height: auto;
+  width: 100%;
+  background-image: url("../src/multimedia/Images/otros/fondo-contacto.jpg");
   background-attachment: fixed;
-  height: 300px;
-  justify-content: space-between;
-  margin-bottom: 100px;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  padding: 3rem;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
 }
 body .mainIndex .sectionContacto .secMail {
   border-radius: 15%;
-  height: 12rem;
-  width: 18rem;
+  height: 200px;
+  width: auto;
   background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secMail svg {
   color: brown;
 }
 body .mainIndex .sectionContacto .secMail .prMail {
+  background-color: rgba(124, 160, 238, 0);
   font-family: "Roboto", sans-serif;
   font-size: 1.3rem;
 }
 body .mainIndex .sectionContacto .secWhat {
   border-radius: 15%;
-  height: 12rem;
-  width: 18rem;
+  height: 200px;
+  width: auto;
   background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secWhat svg {
   color: #0a860a;
 }
 body .mainIndex .sectionContacto .secWhat .prCelular {
+  background-color: rgba(124, 160, 238, 0);
   font-size: 1.3rem;
 }
 body .mainIndex .sectionContacto .secIcon {
   border-radius: 15%;
-  height: 12rem;
-  width: 18rem;
+  height: 200px;
+  width: auto;
   background-color: rgba(124, 160, 238, 0.664);
 }
 body .mainIndex .sectionContacto .secIcon .prRedes {
+  background-color: rgba(124, 160, 238, 0);
   font-size: 1.3rem;
 }
 body .mainIndex .sectionContacto .secIcon div a {
@@ -381,7 +390,7 @@ body .gridPantalones .figurePrenda .aPrecio {
   transition: all 0.5s ease;
 }
 body .gridPantalones .figurePrenda .aPrecio:hover {
-  background-color: #e7d04f;
+  background-color: rgba(1, 112, 240, 0.616);
 }
 body .gridPantalones .figurePrenda .bPrecio {
   font-family: "Roboto", sans-serif;
@@ -406,11 +415,19 @@ body .gridPantalones .figurePrenda .bPrecio:hover {
     font-size: 1.5rem;
     background-color: #ebd07b;
   }
+
+  .mainIndex {
+    background-color: black;
+  }
 }
 /*-----ejemplo----*/
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .h1Nombre {
     font-size: 1.3rem;
+  }
+
+  .post {
+    height: 60%;
   }
 }
 @media (min-width: 600px) {

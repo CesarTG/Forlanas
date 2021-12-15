@@ -39,7 +39,7 @@ body{
                 margin: 1rem;                                                  
     
                 .post{
-                    height: 500px;
+                    height: auto;
                     width: 100%;
                     position: relative;
                     img{
@@ -83,7 +83,7 @@ body{
                 margin: 1rem;                                                    
     
                 .post{
-                    height: 30rem;
+                    height: auto;
                     width: 100%;
                     position: relative;
                     img{
@@ -119,36 +119,43 @@ body{
     .mainIndex{
         
         .sectionContacto{
-            margin-top: 2rem;
-            margin-bottom: 10rem;
-            display: flex;
-            flex-wrap: wrap;
-            background-image: url(../src/multimedia/Images/otros/fondo-contacto.jpg);
-            background-size: cover;
+            height: auto;    
+            width: 100%; 
+            background-image: url('../src/multimedia/Images/otros/fondo-contacto.jpg');
             background-attachment: fixed;
-            height: 300px;                
-            justify-content: space-between;            
-            margin-bottom: 100px; 
+            background-size: cover;
+            display: grid;        
+            grid-template-rows: 1fr ;
+            grid-template-columns: 1fr;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            gap: 1rem;
+            margin-top: 3rem;
+            margin-bottom: 5rem;
+            padding: 3rem;    
+            text-align: center;
+            align-items: center;
+            justify-content: space-around; 
                
             .secMail{  
                 border-radius: 15%;
-                height: 12rem;
-                width: 18rem;
+                height: 200px;
+                width: auto;
                 background-color: rgba(124, 160, 238, 0.664);
                 svg{
                     color: brown;
                 }
 
-                .prMail{                 
-                font-family: 'Roboto', sans-serif;
-                font-size: 1.3rem;
+                .prMail{
+                    background-color: rgba(124, 160, 238, 0);
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.3rem;
                 }  
             }          
             
             .secWhat{
                 border-radius: 15%;
-                height: 12rem;
-                width: 18rem; 
+                height: 200px;
+                width: auto; 
                 background-color: rgba(124, 160, 238, 0.664);
 
                 svg{
@@ -156,17 +163,19 @@ body{
                 }
 
                 .prCelular{
+                    background-color: rgba(124, 160, 238, 0);
                     font-size: 1.3rem;
                 }
             }
                 
             .secIcon{
                 border-radius: 15%;                            
-                height: 12rem;
-                width: 18rem; 
+                height: 200px;
+                width: auto; 
                 background-color: rgba(124, 160, 238, 0.664);
                      
                 .prRedes{
+                    background-color: rgba(124, 160, 238, 0);
                     font-size: 1.3rem;
                 }
                     
@@ -340,7 +349,7 @@ body{
                 transition: all 0.5s ease;                
 
                 &:hover{
-                    background-color: rgb(231, 208, 79);                                                
+                    background-color: rgba(1, 112, 240, 0.616);                                                
                 }
             }
 
@@ -371,12 +380,20 @@ body{
     .h2Titulo{
         font-size: 1.5rem;
         background-color: rgb(235, 208, 123);
+    } 
+    
+    .mainIndex{
+        background-color: black;
     }  
+
 }
 /*-----ejemplo----*/
-@media (min-width: 400px) {
+@media (min-width: 480px) {
     .h1Nombre {
         font-size: 1.3rem;
+    }
+    .post{
+        height: 60%;
     }
 }
 
