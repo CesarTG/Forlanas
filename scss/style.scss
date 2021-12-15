@@ -42,6 +42,8 @@ body{
                     height: auto;
                     width: 100%;
                     position: relative;
+                   /* animate: bounceInLeft;*/
+                    animation-duration: 2s;
                     img{
                         width: 100%;
                         height: 100%;                    
@@ -86,6 +88,8 @@ body{
                     height: auto;
                     width: 100%;
                     position: relative;
+                   /* animate: bounceInLeft;*/
+                    animation-duration: 1s;
                     img{
                         width: 100%;
                         height: 100%;                    
@@ -265,6 +269,8 @@ body{
          /*-- elemento lista--*/
         color: nth($colores, 5);
         border: .5rem inset rgb(126, 125, 125);
+       /* animation: pulse;*/
+        animation-duration: 2s;
     }
 
     .secMapa{
@@ -285,6 +291,12 @@ body{
         text-align: center;
         font-family: 'Roboto', sans-serif;
         border-bottom: 1px solid goldenrod;       
+    }
+    
+    /*---imagen de ejemplo pagina Carrito----*/
+    .imgEjemploCar{
+        width: 100%;
+
     }
    
     /*-----le di este color para resaltar los botones del carousel----*/

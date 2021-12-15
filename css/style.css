@@ -100,6 +100,7 @@ body {
   /*---------seccion prueba Grid index nuevo--------*/
   /*------Estilos pagina Contacto (unicamente)-----*/
   /*--------Estilos Generales------*/
+  /*---imagen de ejemplo pagina Carrito----*/
   /*-----le di este color para resaltar los botones del carousel----*/
   /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*/
 }
@@ -128,6 +129,8 @@ body .mainIndex .gridIndex1 .mainPrueba .post {
   height: auto;
   width: 100%;
   position: relative;
+  /* animate: bounceInLeft;*/
+  animation-duration: 2s;
 }
 body .mainIndex .gridIndex1 .mainPrueba .post img {
   width: 100%;
@@ -169,6 +172,8 @@ body .mainIndex .gridIndex2 .mainPrueba2 .post {
   height: auto;
   width: 100%;
   position: relative;
+  /* animate: bounceInLeft;*/
+  animation-duration: 1s;
 }
 body .mainIndex .gridIndex2 .mainPrueba2 .post img {
   width: 100%;
@@ -318,6 +323,8 @@ body .h2Rojo {
   /*-- elemento lista--*/
   color: black;
   border: 0.5rem inset #7e7d7d;
+  /* animation: pulse;*/
+  animation-duration: 2s;
 }
 body .secMapa {
   background-color: #c7c7c7;
@@ -336,6 +343,9 @@ body .parrafoDonde {
   text-align: center;
   font-family: "Roboto", sans-serif;
   border-bottom: 1px solid goldenrod;
+}
+body .imgEjemploCar {
+  width: 100%;
 }
 body .carousel-control-prev-icon, body .carousel-control-next-icon {
   background-color: black;
