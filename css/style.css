@@ -100,6 +100,7 @@ body {
   /*---------seccion prueba Grid index nuevo--------*/
   /*------Estilos pagina Contacto (unicamente)-----*/
   /*--------Estilos Generales------*/
+  /*-----le di este color para resaltar los botones del carousel----*/
   /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*/
 }
 body .mainIndex {
@@ -407,32 +408,27 @@ body .gridPantalones .figurePrenda .bPrecio:hover {
 
 @media screen and (max-width: 480px) {
   .h2Rojo {
-    font-size: 1.2rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .h2Titulo {
-    font-size: 1.5rem;
-    background-color: #ebd07b;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
   .mainIndex {
     background-color: black;
   }
-}
-/*-----ejemplo----*/
-@media (min-width: 480px) {
-  .h1Nombre {
-    font-size: 1.3rem;
+
+  .h2Titulo {
+    font-size: 1.5rem;
+    background-color: #ebd07b;
   }
 
-  .post {
-    height: 60%;
+  .gridIndex1 {
+    background-color: #59fa74;
+    margin: 0rem;
   }
-}
-@media (min-width: 600px) {
-  .h1Nombre {
-    font-size: 1.6rem;
+
+  .gridIndex2 {
+    background-color: #5969fa;
+    margin: 0rem;
   }
 }
 

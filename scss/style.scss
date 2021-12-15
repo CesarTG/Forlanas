@@ -213,8 +213,7 @@ body{
         font-size: 2rem;
     }
 
-    .carousel-caption{ 
-        
+    .carousel-caption{         
         h5{            
             width: 60%;
             display: inline-block;           
@@ -288,6 +287,7 @@ body{
         border-bottom: 1px solid goldenrod;       
     }
    
+    /*-----le di este color para resaltar los botones del carousel----*/
     .carousel-control-prev-icon, .carousel-control-next-icon{
        background-color: rgb(0, 0, 0);
     }
@@ -371,34 +371,27 @@ body{
 }
 
 @media screen and (max-width: 480px){
-    .h2Rojo {           
-        font-size: 1.2rem;
-    }           
-}
+    
+    .h2Rojo {                   
+        font-size: 1.1rem;
+        font-weight: 600;        
+    }  
 
-@media screen and (max-width: 480px){ 
+    .mainIndex{
+        background-color: black;
+    } 
+
     .h2Titulo{
         font-size: 1.5rem;
         background-color: rgb(235, 208, 123);
     } 
     
-    .mainIndex{
-        background-color: black;
-    }  
-
-}
-/*-----ejemplo----*/
-@media (min-width: 480px) {
-    .h1Nombre {
-        font-size: 1.3rem;
+    .gridIndex1{
+        background-color: rgb(89, 250, 116);
+        margin: 0rem;
     }
-    .post{
-        height: 60%;
-    }
-}
-
-@media (min-width: 600px) {
-    .h1Nombre {
-        font-size: 1.6rem;
+    .gridIndex2{
+        background-color: rgb(89, 105, 250);
+        margin: 0rem;
     }
 }
