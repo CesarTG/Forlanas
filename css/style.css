@@ -129,8 +129,6 @@ body .mainIndex .gridIndex1 .mainPrueba .post {
   height: auto;
   width: 100%;
   position: relative;
-  /* animate: bounceInLeft;*/
-  animation-duration: 2s;
 }
 body .mainIndex .gridIndex1 .mainPrueba .post img {
   width: 100%;
@@ -172,8 +170,6 @@ body .mainIndex .gridIndex2 .mainPrueba2 .post {
   height: auto;
   width: 100%;
   position: relative;
-  /* animate: bounceInLeft;*/
-  animation-duration: 1s;
 }
 body .mainIndex .gridIndex2 .mainPrueba2 .post img {
   width: 100%;
@@ -323,8 +319,6 @@ body .h2Rojo {
   /*-- elemento lista--*/
   color: black;
   border: 0.5rem inset #7e7d7d;
-  /* animation: pulse;*/
-  animation-duration: 2s;
 }
 body .secMapa {
   background-color: #c7c7c7;
@@ -346,6 +340,8 @@ body .parrafoDonde {
 }
 body .imgEjemploCar {
   width: 100%;
+  padding: 4rem;
+  border: 2px solid black;
 }
 body .carousel-control-prev-icon, body .carousel-control-next-icon {
   background-color: black;

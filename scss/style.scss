@@ -41,9 +41,7 @@ body{
                 .post{
                     height: auto;
                     width: 100%;
-                    position: relative;
-                   /* animate: bounceInLeft;*/
-                    animation-duration: 2s;
+                    position: relative;                  
                     img{
                         width: 100%;
                         height: 100%;                    
@@ -87,9 +85,7 @@ body{
                 .post{
                     height: auto;
                     width: 100%;
-                    position: relative;
-                   /* animate: bounceInLeft;*/
-                    animation-duration: 1s;
+                    position: relative;                   
                     img{
                         width: 100%;
                         height: 100%;                    
@@ -268,9 +264,7 @@ body{
         text-align: center;
          /*-- elemento lista--*/
         color: nth($colores, 5);
-        border: .5rem inset rgb(126, 125, 125);
-       /* animation: pulse;*/
-        animation-duration: 2s;
+        border: .5rem inset rgb(126, 125, 125);       
     }
 
     .secMapa{
@@ -296,6 +290,8 @@ body{
     /*---imagen de ejemplo pagina Carrito----*/
     .imgEjemploCar{
         width: 100%;
+        padding: 4rem;
+        border: 2px solid black;
 
     }
    
