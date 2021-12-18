@@ -286,13 +286,54 @@ body{
         font-family: 'Roboto', sans-serif;
         border-bottom: 1px solid goldenrod;       
     }
+
+    /*----------pagina cambios-------*/
+    .pCambios{
+        background-color: rgba(172, 190, 252, 0.377);    
+        width: 90%;
+        box-shadow: black 2px 2px 3px;
+        height: auto;
+        padding: 1rem;        
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600; 
+        color: rgb(0, 0, 0); 
+        text-align: center;             
+    }
+    .pCambios2{
+        background-color: rgba(172, 190, 252, 0.377);    
+        width: auto;
+        box-shadow: black 2px 2px 3px;
+        height: auto;
+        padding: 1rem;        
+        font-family: 'Roboto', sans-serif;
+        font-weight: 600; 
+        color: rgb(0, 0, 0); 
+        text-align: center;
+        justify-content: center; 
+        margin: 3rem;         
+    }
+
+    .secCambios{
+        background-image: url(../src/multimedia/Images/otros/telacolores.jpg);
+        background-attachment: fixed;
+        background-size: cover;  
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+        gap: 1rem;
+        width: 100%;
+        display: grid;       
+        grid-template-rows: 1fr ;
+        grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr  ));
+        grid-template-columns: 1fr ;        
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr ));         
+    }
     
     /*---imagen de ejemplo pagina Carrito----*/
     .imgEjemploCar{
         width: 100%;
         padding: 4rem;
         border: 2px solid black;
-
     }
    
     /*-----le di este color para resaltar los botones del carousel----*/

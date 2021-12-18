@@ -100,6 +100,7 @@ body {
   /*---------seccion prueba Grid index nuevo--------*/
   /*------Estilos pagina Contacto (unicamente)-----*/
   /*--------Estilos Generales------*/
+  /*----------pagina cambios-------*/
   /*---imagen de ejemplo pagina Carrito----*/
   /*-----le di este color para resaltar los botones del carousel----*/
   /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*/
@@ -337,6 +338,45 @@ body .parrafoDonde {
   text-align: center;
   font-family: "Roboto", sans-serif;
   border-bottom: 1px solid goldenrod;
+}
+body .pCambios {
+  background-color: rgba(172, 190, 252, 0.377);
+  width: 90%;
+  box-shadow: black 2px 2px 3px;
+  height: auto;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+body .pCambios2 {
+  background-color: rgba(172, 190, 252, 0.377);
+  width: auto;
+  box-shadow: black 2px 2px 3px;
+  height: auto;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  margin: 3rem;
+}
+body .secCambios {
+  background-image: url(../src/multimedia/Images/otros/telacolores.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 body .imgEjemploCar {
   width: 100%;
