@@ -346,6 +346,7 @@ body .pCambios {
   box-shadow: black 2px 2px 3px;
   height: auto;
   padding: 1rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: black;
@@ -357,6 +358,7 @@ body .pCambios2 {
   box-shadow: black 2px 2px 3px;
   height: auto;
   padding: 1rem;
+  font-size: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   color: black;
