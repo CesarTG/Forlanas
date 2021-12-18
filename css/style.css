@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----extenciones---*/
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Road+Rage&display=swap");
@@ -100,7 +101,7 @@ body {
   /*---------seccion prueba Grid index nuevo--------*/
   /*------Estilos pagina Contacto (unicamente)-----*/
   /*--------Estilos Generales------*/
-  /*----------pagina cambios-------*/
+  /*----------diseño pagina cambios, envios y quienes somos-------*/
   /*---imagen de ejemplo pagina Carrito----*/
   /*-----le di este color para resaltar los botones del carousel----*/
   /**---------------GRID GENERAL TODAS LAS PRENDAS-------------*/
