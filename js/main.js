@@ -39,13 +39,12 @@ function clip() {
 }
 
 let boton2 = document.getElementById("btn-2");
-
 boton2.addEventListener("click", clip2)
+
 function clip2() {
     aumento--;
     span.textContent = aumento;
 }
-
 //--------------------sweter descripcion card-------------------
 let sweter = document.getElementById("sweter");
 sweter.addEventListener("click", agregar)
@@ -59,13 +58,16 @@ function agregar() {
     document.body.appendChild(agregado);
 }
 
+
 // mostrando el total sin el alert
 let div = document.getElementById("totalico");//div
 let boton3 = document.getElementById("sumatoria")//boton
 let ptotal = document.createElement("p")//parrafo
-
+//let psueter = 1200;
+//ptotal.innerHTML = "Tu total es de: " + span.textContent * 1200;
 
 boton3.addEventListener("click", clip3)
+
 function clip3() {
     ptotal.innerHTML = "<strong>Tu total seria de: </stronf>" + span.textContent * 1200;
     console.log(span.textContent);
