@@ -1,4 +1,3 @@
-
 ///-------------------------------------------- Carrito ---------------------------------------------------
 
 //Declaro como variable global a total.
@@ -72,5 +71,5 @@ function clip3() {
     ptotal.innerHTML = "<strong>Tu total seria de: </stronf>" + span.textContent * 1200;
     console.log(span.textContent);
     console.log(ptotal.textContent);
-    totalico.appendChild(ptotal);
+     document.body.appendChild(ptotal);
 }
