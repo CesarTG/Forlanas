@@ -102,16 +102,33 @@
 
     <main class="mainIndex">
 
-        <img class="imgEjemploCar" src="../multimedia/Images/otros/carrito-ejemplo.png" data-aos="fade-left">
+        <h1 style="background-color: rgb(0, 195, 255);">Desafio 10 - Eventos</h1>
 
-        <form data-aos="fade-up">
-            <input type="submit">
-            <input type=boton>
-            <input type="number">
-        </form>
+        <h2 id="titulo2" style="background-color: rgb(72, 255, 0);">Creacion interfaz del carrito de compras</h2>
+    
+        <p>¿Que tipo de prenda deseas llevar? (remera, pantalon, sweter, pollera o bermuda)</p>
+    
+        <div class="container py-5 bg-secondary text-center">
+            <button class="bg-primary p-2" id="sweter">Sweter - Descripción</button>
+            <img class="imagenPrenda" src="../multimedia/Images/sweters/sw-amarillo.jpg"
+            alt="Sweter amarillo">
+    
+        </div>
+    
+        <div class="container py-5 bg-success text-center">
+            <h3>Agregar al carrito</h3>
+            <button class="btn btn-info" id="btn-1">Aumentar</button>
+            <button class="btn btn-danger" id="btn-2">Disminuir</button>
+            <h5 class="contador">Cantidad:</h5>
+            <h4 id="span">0</h4>
+            <button class="bg-primary p-2" id="sumatoria">Mostrar el total</button>
+            <button class="bg-primary p-3" id="listar">Mostrar precios generales</button>
+            <div id="totalico"></div>
+        </div>
 
-        <p>Esta pagina es para hacer la interfaz del carrito de compras</p>
-
+        <div id="listaRandom"></div>
+    
+        <script src="../../js/main.js"></script>
     </main>
 
     <footer>
@@ -163,7 +180,8 @@
         </section>
 
     </footer>
-
+    <!--JavaScript(casero)-->
+    <script src="../../js/main.js"></script>    
     <!--CDN Java Script(bootstrap)-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
