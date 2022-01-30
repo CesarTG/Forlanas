@@ -1,3 +1,4 @@
+
 ///-------------------------------------------- Carrito ---------------------------------------------------
 
 //Declaro como variable global a total.
@@ -19,7 +20,7 @@ function listar() {
         elemento.classList = "bg-warning";
         elemento.innerHTML = `<h3 id="tal"> Tipo de Prenda: ${numeral.prenda1}</h3>;
                           <p>Precio: ${numeral.costo}</p>`
-        document.body.appendChild(elemento);
+        totalico.appendChild(elemento);
     }
 }
 
@@ -54,9 +55,8 @@ function agregar() {
     agregado.innerHTML = `<h3> Tipo de Prenda: sweter</h3>;
     <p>Sweter de lana de color marron, comodo y abrigado!</p>
                           <p>Precio: 1200 </p>`
-    document.body.appendChild(agregado);
+    totalico.appendChild(agregado);
 }
-
 
 // mostrando el total sin el alert
 let div = document.getElementById("totalico");//div
@@ -71,5 +71,5 @@ function clip3() {
     ptotal.innerHTML = "<strong>Tu total seria de: </stronf>" + span.textContent * 1200;
     console.log(span.textContent);
     console.log(ptotal.textContent);
-     document.body.appendChild(ptotal);
+    totalico.appendChild(ptotal);
 }
