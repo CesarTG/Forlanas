@@ -58,13 +58,13 @@ function agregar() {
 }
 
 // mostrando el total sin el alert
-let div = document.getElementById("totalico");//div
-let boton3 = document.getElementById("sumatoria")//boton
+//let div = document.getElementById("totalico");//div
+//document.getElementById("sumatoria") -----------boton traido con jQuery
+let boton3 = $(".botonn"); 
 let ptotal = document.createElement("p")//parrafo
-//let psueter = 1200;
 //ptotal.innerHTML = "Tu total es de: " + span.textContent * 1200;
 
-boton3.addEventListener("click", clip3)
+boton3[0].addEventListener("click", clip3)
 
 function clip3() {
     ptotal.innerHTML = "<strong>Tu total seria de: </stronf>" + span.textContent * 1200;
