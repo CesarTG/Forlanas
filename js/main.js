@@ -11,8 +11,9 @@ const prendas = [{ prenda1: "sweter", costo: 1200 },
 { prenda1: "bermuda", costo: 1600 }];
 
 //mostrar lista de precios
-let listeame = document.getElementById("listar");
-listeame.addEventListener("click", listar)
+//let listeame = document.getElementById("listar");
+let listeame = $("#listar");
+listeame[0].addEventListener("click", listar)
 function listar() {
     for (const numeral of prendas) {
         let elemento = document.createElement("div");
@@ -27,26 +28,28 @@ function listar() {
 const precio = { sweter: 1200, pantalon: 1500, remera: 1000, pollera: 800, bermuda: 1600 };
 //-------------------------------------------------- Eventos ----------------------------------------------
 
-let boton = document.getElementById("btn-1");
-const span = document.getElementById("span");
+let boton = $("#btn-1");
+//const span = document.getElementById("span");
+const span = $("#span");
 let aumento = 0
 
-boton.addEventListener("click", clip)
+boton[0].addEventListener("click", clip)
 function clip() {
     aumento++;
-    span.textContent = aumento;
+    span[0].textContent = aumento;
 }
 
-let boton2 = document.getElementById("btn-2");
-boton2.addEventListener("click", clip2)
+let boton2 = $("#btn-2");
+boton2[0].addEventListener("click", clip2)
 
 function clip2() {
     aumento--;
-    span.textContent = aumento;
+    span[0].textContent = aumento;
 }
 //--------------------sweter descripcion card-------------------
-let sweter = document.getElementById("sweter");
-sweter.addEventListener("click", agregar)
+//let sweter = document.getElementById("sweter");
+let sweter = $("#sweter");
+sweter[0].addEventListener("click", agregar)
 
 function agregar() {
     console.log("agregaste una descripcion del sweter");
@@ -67,8 +70,8 @@ let ptotal = document.createElement("p")//parrafo
 boton3[0].addEventListener("click", clip3)
 
 function clip3() {
-    ptotal.innerHTML = "<strong>Tu total seria de: </stronf>" + span.textContent * 1200;
-    console.log(span.textContent);
+    ptotal.innerHTML = "<strong>Tu total seria de: </stronf>" + span[0].textContent * 1200;
+    //console.log(span[0].textContent);
     console.log(ptotal.textContent);
     totalico.appendChild(ptotal);
 }
