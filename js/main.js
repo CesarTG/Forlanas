@@ -1,5 +1,10 @@
 ///-------------------------------------------- Carrito ---------------------------------------------------
 
+$ (document).ready(function() 
+{
+    console.log("El carrito ya cargo");
+})
+
 //Declaro como variable global a total.
 let total = 0;
 
@@ -12,9 +17,17 @@ const prendas = [{ prenda1: "sweter", costo: 1200 },
 
 //mostrar lista de precios
 //let listeame = document.getElementById("listar");
-let listeame = $("#listar");
-listeame[0].addEventListener("click", listar)
-function listar() {
+//let listeame = $("#listar");
+//listeame[0].addEventListener("click", listar) 
+
+// Evento con jQuery
+$("#totalico").append('<button class="bg-primary p-3" id="listar">Mostrar precios generales jQuery</button>'); 
+$("#listar").on("click", function(){
+    console.log("Lista de precios generales agregada");
+    listar();
+});
+
+function listar() { 
     for (const numeral of prendas) {
         let elemento = document.createElement("div");
         elemento.classList = "bg-warning";
@@ -23,6 +36,7 @@ function listar() {
         totalico.appendChild(elemento);
     }
 }
+
 
 //objeto 1 para darle valor a las prendas, un precio  para multiplicar por la cantidad que introduzca el cliente
 const precio = { sweter: 1200, pantalon: 1500, remera: 1000, pollera: 800, bermuda: 1600 };
