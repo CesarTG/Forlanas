@@ -89,3 +89,7 @@ function clip3() {
     console.log(ptotal.textContent);
     totalico.appendChild(ptotal);
 }
+
+$(".imagenPrenda").fadeOut(2000, function(){
+    $(".imagenPrenda").fadeIn(1000);
+});
