@@ -1,7 +1,6 @@
 ///-------------------------------------------- Carrito ---------------------------------------------------
 
-$ (document).ready(function() 
-{
+$(document).ready(function () {
     console.log("El carrito ya cargo");
 })
 
@@ -21,13 +20,13 @@ const prendas = [{ prenda1: "sweter", costo: 1200 },
 //listeame[0].addEventListener("click", listar) 
 
 // Evento con jQuery
-$("#totalico").append('<button class="bg-primary p-3" id="listar">Mostrar precios generales jQuery</button>'); 
-$("#listar").on("click", function(){
+$("#totalico").append('<button class="bg-primary p-3" id="listar">Mostrar precios generales jQuery</button>');
+$("#listar").on("click", function () {
     console.log("Lista de precios generales agregada");
     listar();
 });
 
-function listar() { 
+function listar() {
     for (const numeral of prendas) {
         let elemento = document.createElement("div");
         elemento.classList = "bg-warning";
@@ -77,7 +76,7 @@ function agregar() {
 // mostrando el total sin el alert
 //let div = document.getElementById("totalico");//div
 //document.getElementById("sumatoria") -----------boton traido con jQuery
-let boton3 = $(".botonn"); 
+let boton3 = $(".botonn");
 let ptotal = document.createElement("p")//parrafo
 //ptotal.innerHTML = "Tu total es de: " + span.textContent * 1200;
 
@@ -90,6 +89,31 @@ function clip3() {
     totalico.appendChild(ptotal);
 }
 
-$(".imagenPrenda").fadeOut(2000, function(){
+$(".imagenPrenda").fadeOut(2000, function () {
     $(".imagenPrenda").fadeIn(1000);
 });
+
+const url = "../json/api.json"
+
+const fetchData = async () => {
+    try {
+        const respuesta = await fetch('../json/api.json')
+        const data = await respuesta.json()
+        console.log(data)
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+/*const url = "api.json"
+$("#busqueda").prepend('<button id="btn">Mostrar</button>');
+$('#btn').click(() => {
+    $.get(url, (respuesta, estado) => {
+        if (estado == "succes") {
+            for (let i = 0; i < respuesta.length; i++) {
+                console.log(respuesta[i])
+            }
+        }
+    })
+})*/
+
